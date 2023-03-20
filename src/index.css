@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+<<<<<<< HEAD
     @font-face {
         font-family: "Gordita";
         font-weight: 400;
         src: url("../public/fonts/Gordita\ Regular.woff") format('woff')
     }
+=======
+  @font-face {
+      font-family: "Gordita";
+      font-weight: 400;
+      src: url("../public/fonts/Gordita\ Regular.woff") format('woff')
+  }
+>>>>>>> main-holder
 }
