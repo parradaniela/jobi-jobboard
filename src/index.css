@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Gordita";
+        font-weight: 400;
+        src: url("../public/fonts/Gordita\ Regular.woff") format('woff')
+    }
+}
