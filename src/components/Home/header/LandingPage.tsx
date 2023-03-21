@@ -2,35 +2,50 @@
 
 const LandingPage = () => {
     return (
-        <div className="flex flex-col items-center">
-            <h2>Find & Hire Experts for any Job.</h2>
-            <p>Unlock your potential with quality jobs & earn from world leading brands.</p>
+        <div className="flex flex-col items-center font-gordita">
+            <h2 className="text-7xl">Find & Hire Experts for any Job</h2>
+            <p className="text-sm">Unlock your potential with quality jobs & earn from world leading brands.</p>
             <form action="submit">
                 <fieldset className="flex">
                     <legend className="sr-only">Search jobs, companies or keywords by category</legend>
                     <div>
-                        <label htmlFor="searchText" >Enter your job title, keyword or company</label>
-                        <input type="text" id="searchText" />
+                        <label htmlFor="searchText" className="text-sm">Enter your job title, keyword or company</label>
+                        <input type="text" id="searchText" className="text-sm" />
                     </div>
                     <div>
-                        <label htmlFor="category" >Category</label>
-                        <select id="category">
-                            <option value="">Select a category</option>
-                            <option value="webDesign">Web design</option>
+                        <label htmlFor="category" className="text-sm">Category</label>
+                        <select id="category" className="text-sm">
+                            <option value="" className="text-sm">Select a category</option>
+                            <option value="webDesign" className="text-sm">Web design</option>
                         </select>
                     </div>
                     <button>Search</button>
                 </fieldset>
             </form>
-            <ul className="flex">
+            <ul className="flex text-center">
                 <li>
-                    <p><span>30k+</span><span>Worldwide Clients</span></p>
+                    <span className="text-2xl block">
+                        30k+
+                    </span>
+                    <span className="text-sm">
+                        Worldwide Clients
+                    </span>
                 </li>
                 <li>
-                    <p><span>3%</span><span>Top Talent</span></p>
+                    <span className=" text-2xl block">
+                        3%
+                    </span>
+                    <span className="text-sm">
+                        Top Talent
+                    </span>
                 </li>
                 <li>
-                    <p><span>12mil</span><span>Dollar Payout</span></p>
+                    <span className="text-2xl block">
+                        12mil
+                    </span>
+                    <span className="text-sm">
+                        Dollar Payout
+                    </span>
                 </li>
             </ul>
         </div>
