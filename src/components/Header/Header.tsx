@@ -1,5 +1,5 @@
 import Nav from "./Nav";
-import LandingPage from './LandingPage';
+import LandingPage from '../pages/Home/LandingPage';
 
 
 const Header = () => {

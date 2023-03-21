@@ -1,9 +1,8 @@
-import Header from "./header/Header"
 
 const Home = () => {
     return (
         <>
-            <Header />
+            <p>Woo home page</p>
         </>
     )
 }
