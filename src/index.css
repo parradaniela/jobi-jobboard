@@ -8,4 +8,17 @@
       font-weight: 400;
       src: url("../public/fonts/GorditaRegular.woff") format('woff')
   }
+  @font-face {
+    font-family: "Gordita-Light"; 
+    font-weight: light;
+    src: url("../public/fonts/GorditaLight.woff") format('woff')
+  }
+}
+
+@layer components {
+  .wrapper {
+    max-width: 1536px;
+    width: 90%;
+    margin: 0 auto;
+  }
 }

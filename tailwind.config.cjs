@@ -8,7 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         garamond: "'Garamond', 'serif'",
-        gordita: "'Gordita', 'sans-serif'"
+        gordita: "'Gordita', 'sans-serif'",
+        gorditaLight: "'Gordita Light', 'sans-serif'",
+        circularStd: "'Circular Std', 'sans-serif'"
       },
       colors: {
         "jobi-green-dark": "#254135",
@@ -21,6 +23,9 @@ module.exports = {
         "jobi-grey-light": "#F5F5F5"
       }
     },
+    container: {
+      center: true
+    }
   },
   plugins: [],
 }
