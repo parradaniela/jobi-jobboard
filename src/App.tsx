@@ -7,8 +7,8 @@ import {
 //layouts
 import RootLayout from "./components/layouts/RootLayout";
 // pages
-import Home from "./components/Home/Home";
-import JobList from "./components/JobList/JobList";
+import Home from "./components/pages/Home/Home";
+import JobList from "./components/pages/JobList/JobList";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
