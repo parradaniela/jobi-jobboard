@@ -2,7 +2,7 @@
 
 const LandingPage = () => {
     return (
-        <div className="flex flex-col items-center font-gordita">
+        <div className="flex flex-col items-center font-gordita wrapper">
             <h2 className="text-7xl">Find & Hire Experts for any Job</h2>
             <p className="text-sm">Unlock your potential with quality jobs & earn from world leading brands.</p>
             <form action="submit">
