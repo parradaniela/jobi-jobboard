@@ -1,8 +1,10 @@
+import { ReactNode } from "react"
+
 type PropsType = {
-    children: string,
+    children?: string | ReactNode,
     style: 'green' | 'outline',
-    corners: 'rounded' | 'rounded-full',
-    otherClasses?: string
+    corners: 'rounded' | 'square',
+    extraClasses?: string
 }
 
 type ButtonVariantsType = {
@@ -12,7 +14,7 @@ type ButtonVariantsType = {
     square: string
 }
 
-const Button = ({ children, style, corners, otherClasses }: PropsType) => {
+const Button = ({ children, style, corners, extraClasses }: PropsType) => {
 
     const buttonVariants: ButtonVariantsType = {
         green: "bg-jobi-green-bright border-jobi-green-bright text-white hover:bg-jobi-green-light hover:border-jobi-green-light hover:text-jobi-green-dark focus:bg-jobi-green-light focus:border-jobi-green-light focus:text-jobi-green-dark",
@@ -24,10 +26,10 @@ const Button = ({ children, style, corners, otherClasses }: PropsType) => {
     return (
         <button
             className={`
-            border-2 px-3 py-1.5 transition-colors
+            flex gap-3 border-2 px-4 py-1.5 transition-colors
             ${buttonVariants[style as keyof ButtonVariantsType]} 
             ${buttonVariants[corners as keyof ButtonVariantsType]} 
-            ${otherClasses ? otherClasses : ''}
+            ${extraClasses ? extraClasses : ''}
             `}
         >
             {children}
