@@ -15,7 +15,7 @@ module.exports = {
       colors: {
         "jobi-green-dark": "#254135",
         "jobi-green": "#31795A",
-        "jobi-green-bright": "#00D749",
+        "jobi-green-bright": "#00BF58",
         "jobi-green-light": "#E9F2EF",
         "jobi-green-lime": "#D2F34C",
         "jobi-black": "#0F1620",
@@ -23,9 +23,6 @@ module.exports = {
         "jobi-grey-light": "#F5F5F5"
       }
     },
-    container: {
-      center: true
-    }
   },
   plugins: [],
 }
