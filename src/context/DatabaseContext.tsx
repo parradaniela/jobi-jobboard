@@ -2,23 +2,26 @@
 import { collection, getDocs} from "firebase/firestore";
 import { db } from "../services/firebase";
 // react imports
-import { createContext, ReactNode, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
+// types
+import { ContextChildren, DatabaseContextInterface, JobData } from "../types/databaseTypes";
+import { initDatabaseContextState, initJobDataState } from "./initialStates";
 
-type Children = { children: ReactNode }
+export const DatabaseContext = createContext<DatabaseContextInterface>(initDatabaseContextState);
 
-export const DatabaseContext = createContext({});
-
-
-const DatabaseProvider = ({ children }: Children) => {
-    const [jobData, setJobData] = useState<any>({})
+const DatabaseProvider = ({ children }: ContextChildren) => {
+    const [jobData, setJobData] = useState<JobData[]>(initJobDataState)
 
     const fetchData = async () => {
         await getDocs(collection(db, "jobList"))
             .then((dataSnapshot) => {
                 const newData = dataSnapshot.docs
-                    .map((doc) => ({ ...doc.data(), id: doc.id }));
+                    .map((doc) => (
+                        { ...doc.data()}
+                    )
+                    ) as JobData[];
+                    console.log(newData)
                 setJobData(newData)
-                console.log(jobData, newData)
             }) //TODO: Don't forget error handling
     }
 
@@ -28,9 +31,7 @@ const DatabaseProvider = ({ children }: Children) => {
 
     return (
         <DatabaseContext.Provider
-            value={(
-                jobData
-            )}
+            value={{jobData}}
         >
             {children}
         </DatabaseContext.Provider>
