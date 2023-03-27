@@ -15,6 +15,7 @@ const FooterNavListItem = ({ heading, navLinks }: PropsType) => {
                     navLinks.map(link => {
                         return (
                             <ListItemLinks
+                                key={link.text}
                                 url={link.url}
                                 text={link.text}
                                 extraClasses="font-gordita leading-10 text-sm opacity-70 hover:opacity-100 focus:opacity-100"
