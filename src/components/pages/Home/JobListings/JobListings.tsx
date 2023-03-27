@@ -1,7 +1,10 @@
+import { useContext } from "react"
 import { NavLink } from "react-router-dom"
-
+import { DatabaseContext } from "../../../../context/DatabaseContext"
 
 const JobListings = () => {
+    // const { jobData } = useContext(DatabaseContext)
+    // console.log(jobData)
     return (
         <section className="wrapper">
             <div className="flex">

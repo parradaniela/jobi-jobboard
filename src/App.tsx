@@ -1,3 +1,4 @@
+//router imports
 import {
   createBrowserRouter,
   Route,
@@ -10,6 +11,9 @@ import RootLayout from "./components/layouts/RootLayout";
 import Home from "./components/pages/Home/Home";
 import JobList from "./components/pages/JobList/JobList";
 import Error from "./components/pages/Error/Error";
+import DatabaseProvider from "./context/DatabaseContext";
+//context import
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,8 +28,9 @@ const router = createBrowserRouter(
 function App() {
   
   return (
-    
-    <RouterProvider router={router} />
+    <DatabaseProvider>
+      <RouterProvider router={router} />  
+    </DatabaseProvider>
     
   )
 }
