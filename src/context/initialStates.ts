@@ -6,6 +6,7 @@ export const initJobDataState: JobData[] = [
         city: '',
         country: '',
         date: '',
+        id: '',
         company: '',
         experience: '',
         salaryEnd: 0,
