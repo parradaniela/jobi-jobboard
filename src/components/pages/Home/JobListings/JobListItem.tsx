@@ -11,7 +11,10 @@ const JobListItem = ({title, type, date, company, country, city, categories, id}
             </div>
             <h3 className="font-bold capitalize">{title}</h3>
             <div>
-                <p className="text-jobi-green-bright font-bold capitalize">{type}</p>
+                <p className={
+                    type === 'fulltime' ? "text-jobi-green-bright font-semibold capitalize" : "text-red-600 font-semibold capitalize"
+                }>
+                    {type}</p>
                 <p className="font-light">{date} by <span className=" font-bold">{company}</span></p>
             </div>
             <div>
