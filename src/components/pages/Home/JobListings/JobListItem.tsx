@@ -1,23 +1,28 @@
+// type imports
 import { JobData } from "../../../../types/databaseTypes"
+// component imports
 import Button from "../../../Global/Buttons/Button"
 
 const JobListItem = ({title, type, date, company, country, city, categories, id}: JobData) => {
     return (
-        <li className="flex">
-            <h3>{title}</h3>
+        <li className="w-4/5 grid grid-cols-5 gap-8 items-start">
             <div>
-                <p>{type}</p>
-                <p>{date} by <span>{company}</span></p>
+                <img src="#" alt="img here" />
+            </div>
+            <h3 className="font-bold capitalize">{title}</h3>
+            <div>
+                <p className="text-jobi-green-bright font-bold capitalize">{type}</p>
+                <p className="font-light">{date} by <span className=" font-bold">{company}</span></p>
             </div>
             <div>
-                <p>{country}, {city}</p>
+                <p className="capitalize font-light">{country}, {city}</p>
                 {
                     categories.map(category => (
-                        <p key={category}>{category}, </p>
+                        <p key={category} className="font-bold capitalize">{category}, </p>
                     ))
                 }
             </div>
-            <div>
+            <div className="flex justify-between items-center">
                 <button>Bookmark</button>
                 <Button style={"green"} corners={"rounded"}>Apply</Button>
             </div>

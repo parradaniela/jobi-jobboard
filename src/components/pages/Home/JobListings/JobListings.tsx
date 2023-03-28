@@ -7,16 +7,17 @@ import JobListItem from "./JobListItem"
 
 const JobListings = () => {
     const { jobData } = useContext(DatabaseContext)
-    console.log(jobData)
+    //TODO: Update job data to actually include dates and update this to be a real function that checks for the five most recent ones
+    const mostRecent = jobData.slice(0, 5)
     return (
         <section className="wrapper">
-            <div className="flex">
-                <h2>New Job Listing</h2>
-                <NavLink to="job-list">Explore all jobs</NavLink>
+            <div className="flex justify-between items-center py-8">
+                <h2 className="font-bold text-2xl">New Job Listings</h2>
+                <NavLink to="job-list" className="text-jobi-green-bright py-2 border-b-2 border-b-jobi-green-bright transition-all hover:text-jobi-green-dark hover:border-b-jobi-green-dark focus:text-jobi-green-dark focus:border-b-jobi-green-dark">Explore all jobs &rsaquo;</NavLink>
             </div>
-            <ul className="">
+            <ul className="flex flex-col gap-4 justify-center items-center py-4">
                 {
-                    jobData.map(({categories, city, country, experience, id, salaryEnd, salaryStart, salaryType, title, type}) => {
+                    mostRecent.map(({categories, city, country, experience, id, salaryEnd, salaryStart, salaryType, title, type}) => {
                         return (
                             <JobListItem
                                 key={id} //TODO: Add ID numbers to jobs to use as keys (and routes)
