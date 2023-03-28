@@ -1,7 +1,7 @@
 import { JobData } from "../../../../types/databaseTypes"
 import Button from "../../../Global/Buttons/Button"
 
-const JobListItem = ({title, type, date, company, country, city, categories}: JobData) => {
+const JobListItem = ({title, type, date, company, country, city, categories, id}: JobData) => {
     return (
         <li className="flex">
             <h3>{title}</h3>

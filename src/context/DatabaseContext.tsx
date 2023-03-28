@@ -17,7 +17,7 @@ const DatabaseProvider = ({ children }: ContextChildren) => {
             .then((dataSnapshot) => {
                 const newData = dataSnapshot.docs
                     .map((doc) => (
-                        { ...doc.data()}
+                        { ...doc.data(), id: doc.id}
                     )
                     ) as JobData[];
                     console.log(newData)

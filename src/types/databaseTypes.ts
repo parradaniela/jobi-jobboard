@@ -7,6 +7,7 @@ export type JobData = {
     company: string,
     date: string,
     experience: string,
+    id: string,
     salaryEnd: number,
     salaryStart: number,
     salaryType: string,

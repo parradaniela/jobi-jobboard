@@ -16,15 +16,16 @@ const JobListings = () => {
             </div>
             <ul className="">
                 {
-                    jobData.map(({categories, city, country, experience, salaryEnd, salaryStart, salaryType, title, type}, i) => {
+                    jobData.map(({categories, city, country, experience, id, salaryEnd, salaryStart, salaryType, title, type}) => {
                         return (
                             <JobListItem
-                                key={i} //TODO: Add ID numbers to jobs to use as keys (and routes)
+                                key={id} //TODO: Add ID numbers to jobs to use as keys (and routes)
                                 categories={categories}
                                 city={city}
                                 country={country}
                                 company={"test"}
                                 date={"today"}
+                                id={id}
                                 experience={experience}
                                 salaryEnd={salaryEnd}
                                 salaryStart={salaryStart}
