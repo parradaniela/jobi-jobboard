@@ -27,7 +27,7 @@ const JobListItem = ({title, type, date, company, country, city, categories, id}
             </div>
             <div className="flex justify-between items-center">
                 <button>Bookmark</button>
-                <Button style={"green"} corners={"rounded"}>Apply</Button>
+                <Button style={"btn-green"} corners={"rounded-full"}>Apply</Button>
             </div>
         </li>
     )

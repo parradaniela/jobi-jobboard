@@ -14,37 +14,37 @@ const Categories = () => {
             <NavLink to="error">Explore all fields &rsaquo;</NavLink>
             <ul className="flex justify-between items-center">
                 <li>
-                    <Button style={"green"} corners={"rounded"}>
+                    <Button style="btn-green" corners="rounded-full">
                         <img src={penIcon} alt="Fountain pen icon" />
                         UI/UX Design
                     </Button>
                 </li>
                 <li>
-                    <Button style={"green"} corners={"rounded"}>
+                    <Button style="btn-green" corners="rounded-full">
                         <img src={codeIcon} alt="Code icon" />
                         Development
                     </Button>
                 </li>
                 <li>
-                    <Button style={"green"} corners={"rounded"}>
+                    <Button style="btn-green" corners="rounded-full">
                         <img src={bagIcon} alt="Bag icon" />
                         Marketing
                     </Button>
                 </li>
                 <li>
-                    <Button style={"green"} corners={"rounded"}>
+                    <Button style="btn-green" corners="rounded-full">
                         <img src={phoneIcon} alt="Phone Receiver icon" />
                         Telemarketing
                     </Button>
                 </li>
                 <li>
-                    <Button style={"green"} corners={"rounded"}>
+                    <Button style="btn-green" corners="rounded-full">
                         <img src={courtIcon} alt="Courthouse icon" />
                         Accounting
                     </Button>
                 </li>
                 <li>
-                    <Button style={"green"} corners={"rounded"}>
+                    <Button style="btn-green" corners="rounded-full">
                         <img src={barsIcon} alt="Barsicon" />
                         Editing
                     </Button>

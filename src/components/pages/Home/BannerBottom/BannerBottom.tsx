@@ -7,8 +7,8 @@ const BannerBottom = () => {
                 <h2>A complete job portal for everyone</h2>
                 <div>
                     <p>Find your dream job & earn from all worldwide leading brands</p>
-                    <Button style={"outline"} corners={"square"}>Looking for a job?</Button>
-                    <Button style={"green"} corners={"square"}>Start Hiring</Button>
+                    <Button style="btn-outline" corners="rounded">Looking for a job?</Button>
+                    <Button style="btn-green" corners="rounded">Start Hiring</Button>
                 </div>
             </div>
         </section>

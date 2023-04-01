@@ -13,7 +13,9 @@ const JobListings = () => {
         <section className="wrapper">
             <div className="flex justify-between items-center py-8">
                 <h2 className="text-6xl">New Job Listings</h2>
-                <NavLink to="job-list" className="text-jobi-green-bright py-2 border-b-2 border-b-jobi-green-bright transition-all hover:text-jobi-green-dark hover:border-b-jobi-green-dark focus:text-jobi-green-dark focus:border-b-jobi-green-dark">Explore all jobs &rsaquo;</NavLink>
+                <NavLink to="job-list" className="text-jobi-green-bright py-2 border-b-2 border-b-jobi-green-bright transition-all hover:text-jobi-green-dark hover:border-b-jobi-green-dark focus:text-jobi-green-dark focus:border-b-jobi-green-dark">
+                    Explore all jobs &rsaquo;
+                </NavLink>
             </div>
             <ul className="flex flex-col gap-4 justify-center items-center py-4">
                 {
@@ -42,7 +44,10 @@ const JobListings = () => {
                 <p className="border-2 border-black inline-block py-1 px-3 rounded-full">
                     Do you want to post a job for your company?&nbsp;
                     <span className="text-jobi-green-bright font-semibold">
-                        We can help. <NavLink to="error" className="font-normal underline hover:text-jobi-green-dark focus:text-jobi-green-dark transition-colors">Click here</NavLink>
+                        We can help.&nbsp;
+                        <NavLink to="/" className="font-normal underline hover:text-jobi-green-dark focus:text-jobi-green-dark transition-colors">
+                            Click here
+                        </NavLink>
                     </span>
                 </p>
             </aside>

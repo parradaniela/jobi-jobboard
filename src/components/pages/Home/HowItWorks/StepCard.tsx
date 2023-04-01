@@ -16,7 +16,9 @@ const StepCard = ({src, text, url, linkText}: PropsType) => {
             </div>
             <div>
                 <p className="py-4">{text}</p>
-                <NavLink to={url} className="uppercase text-jobi-green-bright pb-4">{linkText}</NavLink>
+                <NavLink to={url} className="uppercase text-jobi-green-bright pb-4">
+                    {linkText}
+                </NavLink>
             </div>
         </li>
     )

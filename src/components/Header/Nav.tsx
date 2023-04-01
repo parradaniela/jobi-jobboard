@@ -21,8 +21,8 @@ const Nav = () => {
 
             <div>
                 {/* <Link to="/">Login/Sign Up</Link> */}
-                <Button style="outline" corners="rounded">Login/Sign Up</Button>
-                <Button style="green" corners="rounded">Post a job</Button>
+                <Button style="btn-outline" corners="rounded-full">Login/Sign Up</Button>
+                <Button style="btn-green" corners="rounded-full">Post a job</Button>
             </div>
         </nav>
     )

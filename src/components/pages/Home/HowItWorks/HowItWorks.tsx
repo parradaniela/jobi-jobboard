@@ -14,9 +14,24 @@ const HowItWorks = () => {
                     <p className='text-white'>Get access to our top 1% talent as well as a complete set of hybrid workforce management tools.</p>
                 </div>
                 <ul className="flex justify-center items-center gap-4">
-                    <StepCard src={accountIcon} text={"It takes 2 minutes to open an account"} url={"error"} linkText={"Open Account"} />
-                    <StepCard src={docIcon} text={"Find talent or search for your dream job"} url={"error"} linkText={"Apply or Hire"} />
-                    <StepCard src={pencilIcon} text={"Get your work done quickly with jobi"} url={"error"} linkText={"Payment Methods"} />
+                    <StepCard
+                        src={accountIcon}
+                        text="It takes 2 minutes to open an account"
+                        url="error"
+                        linkText="Open Account"
+                    />
+                    <StepCard
+                        src={docIcon}
+                        text="Find talent or search for your dream job"
+                        url="error"
+                        linkText="Apply or Hire"
+                    />
+                    <StepCard
+                        src={pencilIcon}
+                        text="Get your work done quickly with jobi"
+                        url="error"
+                        linkText="Payment Methods"
+                    />
                 </ul>
             </div>
         </section>

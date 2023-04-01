@@ -18,7 +18,7 @@ const AboutAccordion = () => {
                 <li>Protected payments, every time</li>
             </ul>
             <div>
-                <Button style={'green'} corners={'rounded'}>Learn more</Button>
+                <Button style="btn-green" corners="rounded-full">Learn more</Button>
             </div>
         </div>
     )
