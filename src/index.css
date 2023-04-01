@@ -21,4 +21,12 @@
     width: 90%;
     margin: 0 auto;
   }
+
+  .btn-green {
+    @apply bg-jobi-green-bright border-jobi-green-bright text-white hover:bg-jobi-green-light hover:border-jobi-green-light hover:text-jobi-green-dark focus:bg-jobi-green-light focus:border-jobi-green-light focus:text-jobi-green-dark
+  }
+
+  .btn-outline {
+    @apply bg-transparent border-white text-white hover:border-jobi-green-bright hover:text-jobi-green-bright focus:border-jobi-green-bright focus:text-jobi-green-bright
+  }
 }
