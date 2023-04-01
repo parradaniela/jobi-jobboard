@@ -1,5 +1,5 @@
 // firestore imports
-import { collection, getDocs} from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import { db } from "../services/firebase";
 // react imports
 import { createContext, useEffect, useState } from "react";
@@ -20,7 +20,6 @@ const DatabaseProvider = ({ children }: ContextChildren) => {
                         { ...doc.data(), id: doc.id}
                     )
                     ) as JobData[];
-                    console.log(newData)
                 setJobData(newData)
             }) //TODO: Don't forget error handling
     }
