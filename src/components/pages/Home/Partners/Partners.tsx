@@ -5,7 +5,7 @@ import PartnerImg from "./PartnerImg"
 
 const Partners = () => {
     return (
-        <section className="wrapper">
+        <section className="wrapper py-4">
             <h2 className="sr-only">Our Partners</h2>
             <ul className="flex justify-center items-center gap-10">
                 {
