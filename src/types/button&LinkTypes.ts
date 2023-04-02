@@ -1,8 +1,10 @@
 import { ReactNode } from "react"
 
+type ButtonColorClasses = 'btn-green' | 'btn-outline' | 'btn-blue' | 'btn-cream' | 'btn-pink' | 'btn-lightgreen' | 'btn-lavender' | 'btn-orange'
+
 export interface ButtonProps {
     children?: ReactNode,
-    style: 'btn-green' | 'btn-outline',
+    style: ButtonColorClasses,
     corners: 'rounded-full' | 'rounded',
     extraClasses?: string,
 }

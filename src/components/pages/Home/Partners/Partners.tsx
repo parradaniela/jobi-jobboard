@@ -8,7 +8,7 @@ import airbnbLogo from '../../../../assets/index/logos/logo-airbnb.png';
 
 const Partners = () => {
     return (
-        <section className="wrapper py-4">
+        <section className="wrapper py-8">
             <h2 className="sr-only">Our Partners</h2>
             <ul className="flex justify-center items-center gap-10">
                 <li><img src={googleLogo} alt="Partnered with Google" /></li>

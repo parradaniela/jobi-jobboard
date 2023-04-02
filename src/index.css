@@ -29,4 +29,29 @@
   .btn-outline {
     @apply bg-transparent border-white text-white hover:border-jobi-green-bright hover:text-jobi-green-bright focus:border-jobi-green-bright focus:text-jobi-green-bright
   }
+
+  .btn-blue {
+    @apply bg-jobi-blue border-blue-300 text-jobi-black hover:bg-blue-300 focus:bg-blue-300
+  }
+
+  .btn-cream {
+    @apply bg-jobi-cream border-amber-200 text-jobi-black hover:bg-amber-200 focus:bg-amber-200
+  }
+
+  .btn-pink {
+    @apply bg-jobi-pink border-pink-300 text-jobi-black hover:bg-pink-300 focus:bg-pink-300
+  }
+
+  .btn-lightgreen {
+    @apply bg-jobi-green-light border-jobi-green-bright text-jobi-black hover:bg-jobi-green-bright focus:bg-jobi-green-bright
+  }
+
+  .btn-lavender {
+    @apply bg-jobi-lavender border-purple-300 text-jobi-black hover:bg-purple-300 focus:bg-purple-300
+  }
+
+  .btn-orange {
+    @apply bg-jobi-orange border-orange-300 text-jobi-black hover:bg-orange-300 focus:bg-orange-300
+
+  }
 }

@@ -20,7 +20,12 @@ module.exports = {
         "jobi-green-lime": "#D2F34C",
         "jobi-black": "#0F1620",
         "jobi-grey": "#C4C4C4",
-        "jobi-grey-light": "#F5F5F5"
+        "jobi-grey-light": "#F5F5F5",
+        "jobi-blue": "#EAFBFD",
+        "jobi-cream": "#FFFAEC",
+        "jobi-pink": "#FFEBFB",
+        "jobi-lavender": "#F7F5FF",
+        "jobi-orange": "#FFF3EA"
       }
     },
   },
