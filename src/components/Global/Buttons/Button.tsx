@@ -1,4 +1,4 @@
-import { ButtonProps } from "../../../types/buttonTypes"
+import { ButtonProps } from "../../../types/button&LinkTypes"
 
 const Button = ({ children, style, corners, extraClasses }: ButtonProps) => {
 
