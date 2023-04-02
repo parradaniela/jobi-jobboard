@@ -10,3 +10,9 @@ export interface ButtonProps {
 export interface AnchorProps extends ButtonProps {
     url: string
 }
+
+export type ListItemLinkProps = {
+    url: string,
+    text: string,
+    extraClasses?: string
+}

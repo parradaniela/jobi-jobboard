@@ -1,19 +1,16 @@
+//react router imports
 import { NavLink } from "react-router-dom"
+//type imports
+import { ListItemLinkProps } from "../../../types/button&LinkTypes"
 
-type PropsType = {
-    url: string,
-    text: string,
-    extraClasses?: string
-}
-
-const ListItemLinks = ({ url, text, extraClasses }: PropsType) => {
-  return (
-      <li className={`transition-all ${extraClasses ? extraClasses : ''}`}>
-          <NavLink to={url}>
-              {text}
-          </NavLink>
-      </li>
-  )
+const ListItemLinks = ({ url, text, extraClasses }: ListItemLinkProps) => {
+    return (
+        <li className={`transition-all ${extraClasses ? extraClasses : ''}`}>
+            <NavLink to={url}>
+                {text}
+            </NavLink>
+        </li>
+    )
 }
 
 export default ListItemLinks
