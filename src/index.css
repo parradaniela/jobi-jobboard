@@ -13,11 +13,6 @@
     font-weight: 300;
     src: url("../public/fonts/GorditaLight.woff") format('woff')
   }
-  @font-face {
-    font-family: "Gordita Semibold"; 
-    font-weight: 500;
-    src: url("../public/fonts/GorditaLight.woff") format('woff')
-  }
 }
 
 @layer components {
