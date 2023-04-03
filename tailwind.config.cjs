@@ -10,6 +10,7 @@ module.exports = {
         garamond: "'Garamond', 'serif'",
         gordita: "'Gordita', 'sans-serif'",
         gorditaLight: "'Gordita Light', 'sans-serif'",
+        gorditaSemibold: "'Gordita Semibold, 'sans-serif'",
         circularStd: "'Circular Std', 'sans-serif'"
       },
       colors: {

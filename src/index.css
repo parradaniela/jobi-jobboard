@@ -9,8 +9,13 @@
       src: url("../public/fonts/GorditaRegular.woff") format('woff')
   }
   @font-face {
-    font-family: "Gordita-Light"; 
-    font-weight: light;
+    font-family: "Gordita Light"; 
+    font-weight: 300;
+    src: url("../public/fonts/GorditaLight.woff") format('woff')
+  }
+  @font-face {
+    font-family: "Gordita Semibold"; 
+    font-weight: 500;
     src: url("../public/fonts/GorditaLight.woff") format('woff')
   }
 }
@@ -20,6 +25,10 @@
     max-width: 1536px;
     width: 90%;
     margin: 0 auto;
+  }
+
+  .border-1 {
+    border-width: 1px;
   }
 
   .btn-green {
