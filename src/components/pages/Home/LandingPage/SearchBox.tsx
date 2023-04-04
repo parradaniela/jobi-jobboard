@@ -7,13 +7,13 @@ const SearchBox = () => {
       <fieldset className="flex items-center">
         <legend className="sr-only">Search jobs, companies or keywords by category</legend>
 
-        <div className="flex flex-col bg-white p-3 rounded-l-md">
+        <div className="flex flex-col bg-white p-3 rounded-l-md self-stretch">
           <label htmlFor="searchText" className="text-gray-400 text-xs px-2">Enter your job title, keyword or company</label>
           <input type="text" id="searchText" className="text-sm p-2 my-1" />
         </div>
 
-        <div className="flex flex-col bg-white p-3">
-          <label htmlFor="category" className="text-gray-400 text-xs px-2">Category</label>
+        <div className="flex flex-col bg-white p-3 ">
+          <label htmlFor="category" className="text-gray-400 text-xs px-2 self-stretch">Category</label>
           <select id="category" className="text-sm p-2 my-1 bg-white">
             <option value="" className="text-sm">Select a category</option>
             <option value="webDesign" className="text-sm">Web design</option>
