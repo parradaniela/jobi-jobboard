@@ -7,10 +7,11 @@ import StepCard from "./StepCard"
 
 const HowItWorks = () => {
     return (
-        <section className="bg-slate-400 py-32 font-gordita">
+        <section className="bg-get-started bg-cover bg-[-10%] py-44 font-gordita">
             <div className="wrapper flex flex-col gap-8">
                 <div className="self-end w-1/3 mx-10">
-                    <h2 className="text-6xl font-medium">Let's get started. <span className="block text-jobi-green py-8">It's simple.</span></h2>
+                    <h2 className="text-6xl font-medium text-white">Let's get started.</h2>
+                    <p className=" text-6xl text-white py-8">It's <span className="text-jobi-green-bright">simple.</span></p>
                     <p className='text-white'>Get access to our top 1% talent as well as a complete set of hybrid workforce management tools.</p>
                 </div>
                 <ul className="flex justify-center items-center gap-12">

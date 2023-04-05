@@ -8,16 +8,18 @@ import airbnbLogo from '../../../../assets/index/logos/logo-airbnb.png';
 
 const Partners = () => {
     return (
-        <section className="wrapper py-8">
-            <h2 className="sr-only">Our Partners</h2>
-            <ul className="flex justify-center items-center gap-10">
-                <li><img src={googleLogo} alt="Partnered with Google" /></li>
-                <li><img src={shipBobLogo} alt="Partnered with ShipBob" /></li>
-                <li><img src={dribbbleLogo} alt="Partnered with Dribbble" /></li>
-                <li><img src={slackLogo} alt="Partnered with Slack" /></li>
-                <li><img src={vineLogo} alt="Partnered with Vine" /></li>
-                <li><img src={airbnbLogo} alt="Partnered with AirBnB" /></li>
-            </ul>
+        <section className="bg-jobi-grey-light py-8">
+            <div className="wrapper">
+                <h2 className="sr-only">Our Partners</h2>
+                <ul className="flex justify-center items-center gap-10">
+                    <li><img src={googleLogo} alt="Partnered with Google" /></li>
+                    <li><img src={shipBobLogo} alt="Partnered with ShipBob" /></li>
+                    <li><img src={dribbbleLogo} alt="Partnered with Dribbble" /></li>
+                    <li><img src={slackLogo} alt="Partnered with Slack" /></li>
+                    <li><img src={vineLogo} alt="Partnered with Vine" /></li>
+                    <li><img src={airbnbLogo} alt="Partnered with AirBnB" /></li>
+                </ul>
+            </div>
         </section>
     )
 }

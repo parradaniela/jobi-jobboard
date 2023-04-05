@@ -2,7 +2,7 @@ import Anchor from "../../../Global/Buttons/Anchor"
 
 const BannerBottom = () => {
     return (
-        <section className="bg-slate-500 py-16 font-gordita">
+        <section className="bg-bottom-banner bg-cover bg-center py-16 font-gordita">
             <div className="wrapper flex justify-evenly gap-8">
                 <h2 className="text-6xl text-white w-1/2 capitalize">A complete job portal for everyone</h2>
                 <div className="py-8">

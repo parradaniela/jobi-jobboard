@@ -4,7 +4,7 @@ import LogoHorizontal from "../Logo/LogoHorizontal"
 
 const Nav = () => {
     return (
-        <nav className="flex items-center justify-evenly font-gordita bg-black text-white py-6">
+        <nav className="flex items-center justify-evenly font-gordita text-white py-6">
             <div>
                 <LogoHorizontal alt={"Jobi Home Page"}>
                     <h1 className="sr-only">Jobi</h1>

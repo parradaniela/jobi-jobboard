@@ -1,5 +1,10 @@
 import { NavLink } from "react-router-dom"
+//component imports
 import HighlightArticle from "./HighlightArticle"
+//images
+import articleImgOne from "../../../../assets/index/photos/photo-wfh-thought-catalog.jpg"
+import articleImgTwo from "../../../../assets/index/photos/photo-businessman-taylor-grote.jpg"
+import articleImgThree from "../../../../assets/index/photos/photo-laptop-corinne-kutz.jpg"
 
 
 const BlogHighlights = () => {
@@ -14,10 +19,10 @@ const BlogHighlights = () => {
           Explore More &rsaquo;
         </NavLink>
       </div>
-      <div className="flex justify-evenly gap-8">
-        <HighlightArticle />
-        <HighlightArticle />
-        <HighlightArticle />
+      <div className="flex justify-evenly gap-8 py-8">
+        <HighlightArticle img={articleImgOne} alt="Woman working at home from her laptop, sitting on the ground on top of a bright red carpet" />
+        <HighlightArticle img={articleImgTwo} alt="A young businessman dressed in a suit walks down an alleyway, smiling and looking upwards" />
+        <HighlightArticle img={articleImgThree} alt="Overhead angle of a woman typing on a laptop on top of a round white table. A small plant, a pair of glasses, two pencils and a face-down mobile phone are visible" />
       </div>
     </section>
   )
