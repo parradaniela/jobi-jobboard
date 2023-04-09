@@ -1,6 +1,9 @@
+//component imports
 import Button from "../../../Global/Buttons/Button"
 import TestimonialCarousel from "./TestimonialCarousel"
-
+//image imports
+import carouselImgOne from "../../../../assets/index/headshots/headshot-josh-scorpio.jpg"
+import carouselImgTwo from "../../../../assets/index/headshots/headshot-kaziminmizan-mizan.jpg"
 
 const Testimonials = () => {
     return (
@@ -20,8 +23,20 @@ const Testimonials = () => {
                     </div>
                 </div>
                 <ul className="flex justify-center items-center gap-8 py-8">
-                    <TestimonialCarousel />
-                    <TestimonialCarousel />
+                    <TestimonialCarousel
+                        heading="Impressive!"
+                        text="Amazing theme, I'm using it for our internal process & procedures, and it's working very well."
+                        name="Rashed Ka"
+                        location="Dhaka"
+                        img={carouselImgOne}
+                    />
+                    <TestimonialCarousel
+                        heading="Great work!!"
+                        text="One of the best places to find experts. Highly recommended!"
+                        name="Zubayer Al Hasan"
+                        location="USA"
+                        img={carouselImgTwo}
+                    />
                 </ul>
             </div>
 
