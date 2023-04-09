@@ -1,4 +1,4 @@
-import Anchor from "../../../Global/Buttons/Anchor"
+import Anchor from "../../../../Global/Buttons/Anchor"
 import AccordionItem from "./AccordionItem"
 
 const AboutAccordion = () => {
