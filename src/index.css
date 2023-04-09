@@ -30,6 +30,17 @@
     border-bottom-width: 1px;
   }
 
+  .transition-accordion-active {
+    max-height: 9999px;
+    transition: all .5s cubic-bezier(1, 0, 1, 0);
+  }
+
+  .transition-accordion-hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s cubic-bezier(0, 1, 0, 1);
+  }
+
   .btn-green {
     @apply bg-jobi-green-bright border-jobi-green-bright text-white hover:bg-jobi-green-light hover:border-jobi-green-light hover:text-jobi-green-dark focus:bg-jobi-green-light focus:border-jobi-green-light focus:text-jobi-green-dark
   }

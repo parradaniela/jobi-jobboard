@@ -20,8 +20,8 @@ const AccordionItem = ({ children, heading, index }: Props) => {
                 {heading} <span className="-rotate-45">&rsaquo;</span>
             </h3>
             <p className={selected === index
-                ? "font-gorditaLight text-base leading-normal max-h-96 transition-all"
-                : "font-gorditaLight text-base leading-normal max-h-0 overflow-hidden transition-all"
+                ? "font-gorditaLight text-base leading-normal transition-[height] duration-1000 ease-linear max-h-96"
+                : "font-gorditaLight text-base leading-normal transition-[height] duration-1000 ease-linear overflow-hidden max-h-0"
                 }
             >
                 {children}
