@@ -46,7 +46,7 @@
   }
 
   .btn-outline {
-    @apply bg-transparent border-white text-white hover:border-jobi-green-bright hover:text-jobi-green-bright focus:border-jobi-green-bright focus:text-jobi-green-bright
+    @apply bg-transparent border-white text-white hover:bg-black/80 hover:border-jobi-green-bright hover:text-jobi-green-bright focus:border-jobi-green-bright focus:text-jobi-green-bright
   }
 
   .btn-blue {
