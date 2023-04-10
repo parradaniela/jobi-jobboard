@@ -16,7 +16,11 @@ const SearchBox = () => {
           <label htmlFor="category" className="text-gray-400 text-xs px-2 self-stretch">Category</label>
           <select id="category" className="text-sm p-2 my-1 bg-white">
             <option value="" className="text-sm">Select a category</option>
-            <option value="webDesign" className="text-sm">Web design</option>
+            <option value="webDesign">Web design</option>
+            <option value="marketing">Marketing</option>
+            <option value="accounting">Accounting</option>
+            <option value="editing">Editing</option>
+            <option value="design">UI/UX Design</option>
           </select>
         </div>
 
