@@ -32,7 +32,7 @@ const Testimonials = () => {
                     />
                     <TestimonialCarousel
                         heading="Great work!!"
-                        text="One of the best places to find experts. Highly recommended!"
+                        text="One of the best places that I found experts. Highly recommended!"
                         name="Zubayer Al Hasan"
                         location="USA"
                         img={carouselImgTwo}

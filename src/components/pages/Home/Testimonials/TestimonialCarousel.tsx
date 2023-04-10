@@ -10,7 +10,7 @@ type Props = {
 
 const TestimonialCarousel = ({heading, text, name, location, img}: Props) => {
     return (
-        <li className="bg-white p-11 w-2/5 rounded-md">
+        <li className="bg-white p-11 w-2/5 rounded-md self-stretch">
             <div className="flex items-center justify-between">
                 <h3 className="text-lg text-jobi-green-bright leading-loose">
                     {heading}
