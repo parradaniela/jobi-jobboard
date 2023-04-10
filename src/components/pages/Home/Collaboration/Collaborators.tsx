@@ -1,14 +1,11 @@
 import { NavLink } from "react-router-dom"
-import jobiLogo from "../../../../assets/index/logos/logo-jobi-2.png";
+import shape from "../../../../assets/index/Images.png"
 
 const Collaboration = () => {
     return (
-        <section className="wrapper py-8 flex justify-center font-gordita">
-            <div className="w-1/2 border-1 border-b-gray-300 rounded-[50%] flex items-center justify-center">
-                <div className="border-1 border-b-gray-300 w-3/4 h-3/4 rounded-[50%] flex justify-center items-center">
-                    <img src={jobiLogo} alt="" />
-                    {/* What the heck's going on here - revisit later */}
-                </div>
+        <section className="wrapper py-12 flex justify-evenly font-gordita">
+            <div>
+                <img src={shape} alt="Brands love to collaborate with us and our network of candidates" />
             </div>
             <div className="p-12 w-1/3">
                 <span className="uppercase text-gray-400 leading-loose">Top brand</span>
