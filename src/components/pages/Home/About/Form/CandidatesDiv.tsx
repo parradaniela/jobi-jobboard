@@ -10,7 +10,7 @@ import plusIcon from "../../../../../assets/index/icons/add-outline.svg";
 
 const CandidatesDiv = () => {
     return (
-        <div className="absolute bottom-0 left-0 w-1/2 bg-white  rounded-lg shadow-3xl text-center flex flex-col justify-start items-center h-28 p-2 gap-2">
+        <div className="hidden absolute bottom-0 left-0 w-2/3 bg-white rounded-lg shadow-3xl text-center flex-col justify-start items-center h-28 p-2 gap-2 lg:flex xl:w-1/2">
             <p className="font-gordita text-lg">18k+ candidates</p>
             <div className="flex items-center relative">
                 <div className="w-16 h-16 rounded-full border-4 border-white absolute left-[-8rem] top-0 z-0 overflow-hidden">
