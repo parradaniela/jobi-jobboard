@@ -9,14 +9,15 @@ import airbnbLogo from '../../../../assets/index/logos/logo-airbnb.png';
 const Partners = () => {
     return (
         <section className="bg-jobi-grey-light py-8">
-            <div className="wrapper">
+            <div className="wrapper-sm md:wrapper">
                 <h2 className="sr-only">Our Partners</h2>
-                <ul className="flex justify-center items-center gap-10">
+                <ul className="flex flex-wrap justify-center items-center gap-8 md:gap-10">
                     <li><img src={googleLogo} alt="Partnered with Google" /></li>
                     <li><img src={shipBobLogo} alt="Partnered with ShipBob" /></li>
                     <li><img src={dribbbleLogo} alt="Partnered with Dribbble" /></li>
                     <li><img src={slackLogo} alt="Partnered with Slack" /></li>
-                    <li><img src={vineLogo} alt="Partnered with Vine" /></li>
+                    {/* Setting full basis for Vine logo to keep more consistent column shapes in smallest screen sizes, then back to auto at small breakpoint */}
+                    <li className='basis-full flex justify-center sm:basis-auto'><img src={vineLogo} alt="Partnered with Vine" /></li>
                     <li><img src={airbnbLogo} alt="Partnered with AirBnB" /></li>
                 </ul>
             </div>

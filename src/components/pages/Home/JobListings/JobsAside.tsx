@@ -5,7 +5,7 @@ const JobsAside = () => {
     <aside className="text-center my-4">
       <p className="border-1 border-black inline-block py-1 px-3 rounded-full">
         Do you want to post a job for your company?&nbsp;
-        <span className="text-jobi-green-bright font-semibold">
+        <span className="block text-jobi-green-bright font-semibold md:inline-block">
           We can help.&nbsp;
           <NavLink to="/" className="font-normal underline hover:text-jobi-green-dark focus:text-jobi-green-dark transition-colors">
             Click here

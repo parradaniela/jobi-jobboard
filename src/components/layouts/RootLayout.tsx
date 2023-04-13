@@ -2,16 +2,13 @@
 import { Outlet } from "react-router-dom"
 //component imports
 import Footer from "../Footer/Footer"
-import Header from "../Header/Header"
-//image imports
-import background from "../../assets/index/photos/photo-group-mapbox.jpg";
-
+import Header from "../pages/Home/Header/Header"
 
 const RootLayout = () => {
-    console.log(background)
+    
     return (
         <>
-            <header className="bg-landing bg-center bg-cover">
+            <header className="bg-landing bg-center bg-cover min-h-screen">
                 <Header />
             </header>
             <main>

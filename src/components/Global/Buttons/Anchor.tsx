@@ -8,7 +8,7 @@ const Anchor = ({ children, style, corners, extraClasses, url }: AnchorProps) =>
         <NavLink
             to={url}   
             className={`
-            flex justify-center items-center gap-3 border-2 px-4 py-1.5 transition-colors
+            flex justify-center items-center gap-3 border-2 px-4 py-1.5 transition-all w-full md:w-auto
             ${style} 
             ${corners} 
             ${extraClasses ? extraClasses : ''}
