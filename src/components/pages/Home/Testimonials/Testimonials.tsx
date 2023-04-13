@@ -1,28 +1,30 @@
 //component imports
-import Button from "../../../Global/Buttons/Button"
 import TestimonialCarousel from "./TestimonialCarousel"
 //image imports
 import carouselImgOne from "../../../../assets/index/headshots/headshot-josh-scorpio.jpg"
 import carouselImgTwo from "../../../../assets/index/headshots/headshot-kaziminmizan-mizan.jpg"
+//ionicons
+import { IonIcon } from "@ionic/react"
+import { arrowBackOutline, arrowForwardOutline } from 'ionicons/icons';
 
 const Testimonials = () => {
     return (
         <section className="py-8 font-gordita bg-testimonials bg-center">
-            <div className="wrapper">
-                <div className="flex items-end justify-between">
-                    <h2 className="text-6xl leading-normal text-white w-1/2 capitalize">What do our clients think of us?</h2>
-                    <div className="flex basis-1/12 justify-between text-white pb-4">
-                        <Button style="btn-outline" corners="rounded-full" >
-                            &larr;
+            <div className="wrapper-sm md:wrapper">
+                <div className="md:flex items-end justify-between">
+                    <h2 className="text-center text-3xl md:text-6xl leading-normal text-white md:text-left lg:w-1/2 capitalize">What do our clients think of us?</h2>
+                    <div className="flex gap-4 my-4 basis-1/12 justify-center md:justify-between text-white pb-4">
+                        <button className="transition-all flex items-center p-[10px] mx-4 border-1 border-white rounded-full hover:bg-jobi-green-lime hover:border-jobi-green-lime hover:text-black focus:bg-jobi-green-lime focus:border-jobi-green-lime focus:text-black">
+                            <IonIcon icon={arrowBackOutline} className="text-2xl" />
                             <span className="sr-only">Previous reviews</span>
-                        </Button>
-                        <Button style="btn-green" corners="rounded-full" >
-                            &rarr;
+                        </button>
+                        <button className="transition-all border-1 border-jobi-green-bright bg-jobi-green-bright p-[10px] rounded-full flex items-center hover:bg-jobi-green-lime hover:border-jobi-green-lime hover:text-black focus:bg-jobi-green-lime focus:border-jobi-green-lime focus:text-black">
+                        <IonIcon icon={arrowForwardOutline} className="text-2xl" />
                             <span className="sr-only">Next reviews</span>
-                        </Button>
+                        </button>
                     </div>
                 </div>
-                <ul className="flex justify-center items-center gap-8 py-8">
+                <ul className="flex flex-col justify-center items-center gap-8 py-8 md:flex-row">
                     <TestimonialCarousel
                         heading="Impressive!"
                         text="Amazing theme, I'm using it for our internal process & procedures, and it's working very well."
