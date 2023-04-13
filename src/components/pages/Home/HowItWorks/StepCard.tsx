@@ -5,7 +5,7 @@ import { StepCardProps } from "../../../../types/button&LinkTypes"
 
 const StepCard = ({src, text, url, linkText}: StepCardProps) => {
     return (
-        <li className="flex gap-4 p-8 bg-slate-50 rounded-lg group transition-all hover:scale-110 focus:scale-110">
+        <li className="flex gap-4 p-8 bg-slate-50 rounded-lg group transition-all hover:scale-105 focus-within:scale-105 md:hover:scale-110 md:focus-within:scale-110">
             <div className="w-12">
                 {/* Leaving alt text empty so the images are skipped by screen readers, they don't add anything */}
                 <img src={src} alt="" />
