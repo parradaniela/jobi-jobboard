@@ -8,7 +8,8 @@ type Props = {
 
 const AccordionItem = ({ children, heading, index }: Props) => {
     const [selected, setSelected] = useState<number | null>(null)
-    const onClickToggleSelected = (index: number | null) => {
+    
+    const onClickToggleSelected = (index: number) => {
         if (selected === index) {
             return setSelected(null)
         }
