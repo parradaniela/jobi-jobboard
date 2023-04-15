@@ -18,7 +18,7 @@ const FooterNavListItem = ({ heading, navLinks }: PropsType) => {
                                 key={link.text}
                                 url={link.url}
                                 text={link.text}
-                                extraClasses="font-gordita leading-10 text-sm opacity-70 hover:opacity-100 focus-within:opacity-100"
+                                extraClasses="font-gordita leading-10 text-sm hover:text-jobi-green-lime focus-within:text-jobi-green-lime"
                             />
                         )
                     })

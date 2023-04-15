@@ -9,8 +9,8 @@ const Aside = () => {
   return (
     <aside className="pt-12 flex flex-col justify-between text-white wrapper xl:flex-row">
       <ul className="flex flex-col text-center justify-between gap-4 xl:flex-row">
-        <ListItemLinks url='/' text='Privacy & Terms' extraClasses='hover:opacity-70 focus-within:opacity-70  '/>
-        <ListItemLinks url='/' text='Contact Us' extraClasses='hover:opacity-70 focus-within:opacity-70 '/>
+        <ListItemLinks url='/' text='Privacy & Terms' extraClasses='hover:text-jobi-green-lime focus-within:text-jobi-green-lime  '/>
+        <ListItemLinks url='/' text='Contact Us' extraClasses='hover:text-jobi-green-lime focus-within:text-jobi-green-lime '/>
       </ul>
       <p className="text-xs opacity-60 my-4 text-center xl:my-0 xl:text-left">Copyright @2022 jobi inc.</p>
       <ul className="flex justify-center gap-4 xl:justify-between">

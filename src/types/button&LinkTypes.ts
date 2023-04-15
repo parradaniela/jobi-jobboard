@@ -23,5 +23,6 @@ export type StepCardProps = {
     src: string,
     text: string,
     url: string,
-    linkText: string
+    linkText: string,
+    stepNumber: string
 }

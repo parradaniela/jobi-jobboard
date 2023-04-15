@@ -1,4 +1,8 @@
+//react imports
 import { ReactNode, useState } from "react"
+//ionicons
+import { IonIcon } from "@ionic/react"
+import { chevronDownOutline } from "ionicons/icons"
 
 type Props = {
     children: ReactNode,
@@ -8,7 +12,7 @@ type Props = {
 
 const AccordionItem = ({ children, heading, index }: Props) => {
     const [selected, setSelected] = useState<number | null>(null)
-    
+
     const onClickToggleSelected = (index: number) => {
         if (selected === index) {
             return setSelected(null)
@@ -21,16 +25,27 @@ const AccordionItem = ({ children, heading, index }: Props) => {
                 aria-controls={`content-${index}`}
                 aria-expanded={selected === index ? "true" : "false"}
                 id={`accordion-control-${index}`}
-                className="text-2xl text-jobi-green-dark font-gorditaSemibold leading-loose cursor-pointer text-left"
+                className="text-2xl text-jobi-green-dark font-gorditaSemibold leading-loose cursor-pointer text-left flex gap-4 items-center"
             >
-                {heading} <span className="-rotate-45">&rsaquo;</span>
+                {heading}
+                <span>
+                    <IonIcon
+                        icon={chevronDownOutline}
+                        className={
+                            selected === index
+                                ? "text-base transition-all rotate-180"
+                                : 'text-base transition-all'
+                        }
+                    />
+                </span>
             </button>
             <p
                 aria-hidden={selected === index ? "false" : "true"}
                 id={`content-${index}`}
-                className={selected === index
-                ? "font-gorditaLight text-base leading-normal transition-[height] duration-1000 ease-linear max-h-96"
-                : "font-gorditaLight text-base leading-normal transition-[height] duration-1000 ease-linear overflow-hidden max-h-0"
+                className={
+                    selected === index
+                        ? "font-gorditaLight text-base leading-normal transition-[height] duration-1000 ease-linear max-h-96"
+                        : "font-gorditaLight text-base leading-normal transition-[height] duration-1000 ease-linear overflow-hidden max-h-0"
                 }
             >
                 {children}
