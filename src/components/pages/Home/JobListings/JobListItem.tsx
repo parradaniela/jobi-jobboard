@@ -5,23 +5,25 @@ import Button from "../../../Global/Buttons/Button"
 //image imports
 import bookmark from "../../../../assets/index/button-icons/icon-bookmark.svg"
 import screenIcon from '../../../../assets/index/icons/desktop-outline.svg'
+import { IonIcon } from "@ionic/react"
+import { desktopOutline } from "ionicons/icons"
 
 const JobListItem = ({title, type, date, company, country, city, categories, id}: JobData) => {
     return (
         //TODO: Readjust this to have more columns and have each div take up different amount of columns
-        <li className="transition-all w-full grid grid-auto-rows gap-4 items-center text-center px-4 py-4 border-1 border-gray-200 rounded-xl group md:text-left lg:grid-cols-5 lg:w-4/5 hover:bg-jobi-black hover:text-white  focus-within:bg-jobi-black focus-within:text-white">
-            <div className="w-1/5 justify-self-center hidden md:block">
-                <img src={screenIcon} alt={title} />
+        <li className="transition-all w-full grid grid-auto-rows gap-4 items-center text-center px-4 py-4 border-1 border-gray-200 rounded-xl group md:text-left md:grid-cols-4 lg:grid-cols-5 lg:w-4/5 hover:bg-jobi-black hover:text-white  focus-within:bg-jobi-black focus-within:text-white md:justify-center">
+            <div className="w-1/5 justify-self-center hidden lg:block">
+                <IonIcon icon={desktopOutline} className="text-6xl"/>
             </div>
-            <h3 className="font-gorditaSemibold capitalize text-lg md:text-base">{title}</h3>
-            <div className="flex justify-evenly lg:flex-col">
+            <h3 className="text-center font-gorditaSemibold capitalize text-lg md:text-base">{title}</h3>
+            <div className="flex justify-center gap-8 md:gap-4 lg:flex-col lg:gap-0">
                 <p className={
                     type === 'fulltime' ? "text-jobi-green-bright capitalize" : "text-red-600 capitalize group-hover:text-rose-400 group-focus-within:text-rose-400"
                 }>
                     {type}</p>
                 <p className="font-gorditaLight">{date} by <span className="font-semibold">{company}</span></p>
             </div>
-            <div>
+            <div className="text-center">
                 <p className="capitalize font-gorditaLight mb-3 md:mb-0">{country}, {city}</p>
                 <div className="flex flex-col justify-evenly items-center text-center">
                 {
