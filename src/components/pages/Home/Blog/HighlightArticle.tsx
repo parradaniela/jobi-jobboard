@@ -12,7 +12,7 @@ type Props = {
 const HighlightArticle = ({img, alt}: Props) => {
     return (
         <article className="lg:w-1/4">
-            <NavLink to="/" className="flex flex-col gap-4 p-4 transition-all hover:bg-jobi-green-light hover:-translate-y-4 group sm:flex-row lg:flex-col">
+            <NavLink to="/" className="flex flex-col gap-4 p-4 transition-all hover:bg-jobi-green-light hover:-translate-y-4 focus:bg-jobi-green-light focus:-translate-y-4 group sm:flex-row lg:flex-col">
                 <div className="sm:w-2/3 lg:w-full">
                     <img src={img} alt={alt} />
                 </div>
@@ -22,7 +22,7 @@ const HighlightArticle = ({img, alt}: Props) => {
                     {/* TODO: Create a function to truncate text properly */}
                     <p className="text-base font-gorditaLight">This response is important for our ability to learn from mistakes, but words ...</p>
                     <span className="sr-only">Click to read this blog post</span>
-                    <span className="group-hover:translate-x-[95%] transition-all">
+                    <span className="group-hover:translate-x-[95%] group-focus-within:translate-x-[95%] transition-all">
                         <IonIcon icon={arrowForwardOutline} />
                     </span>
                 </div>

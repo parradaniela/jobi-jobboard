@@ -12,11 +12,11 @@ const Nav = () => {
             </div>
 
             <ul className="flex text-sm gap-8 ">
-                <ListItemLinks url="/" text="Home" extraClasses="hover:text-jobi-green-bright focus:text-jobi-green-bright"/>
-                <ListItemLinks url="job-list" text="Jobs" extraClasses="hover:text-jobi-green-bright focus:text-jobi-green-bright"/>
-                <ListItemLinks url="/" text="Explore" extraClasses="hover:text-jobi-green-bright focus:text-jobi-green-bright"/>
-                <ListItemLinks url="/" text="Category" extraClasses="hover:text-jobi-green-bright focus:text-jobi-green-bright"/>
-                <ListItemLinks url="/" text="Pages" extraClasses="hover:text-jobi-green-bright focus:text-jobi-green-bright"/>
+                <ListItemLinks url="/" text="Home" extraClasses="hover:text-jobi-green-bright focus-within:text-jobi-green-bright"/>
+                <ListItemLinks url="job-list" text="Jobs" extraClasses="hover:text-jobi-green-bright focus-within:text-jobi-green-bright"/>
+                <ListItemLinks url="/" text="Explore" extraClasses="hover:text-jobi-green-bright focus-within:text-jobi-green-bright"/>
+                <ListItemLinks url="/" text="Category" extraClasses="hover:text-jobi-green-bright focus-within:text-jobi-green-bright"/>
+                <ListItemLinks url="/" text="Pages" extraClasses="hover:text-jobi-green-bright focus-within:text-jobi-green-bright"/>
             </ul>
 
             <div className="flex gap-8">
