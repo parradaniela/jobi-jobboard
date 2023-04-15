@@ -8,7 +8,7 @@ type PropsType = {
 
 const FooterNavListItem = ({ heading, navLinks }: PropsType) => {
     return (
-        <li className="px-10 mx-2">
+        <li className="transition-all px-10 md:px-14 lg:px-20 xl:px-10 sm:self-start">
             <h3 className="text-xl font-circularStd font-medium leading-normal">{heading}</h3>
             <ul>
                 {
@@ -18,7 +18,7 @@ const FooterNavListItem = ({ heading, navLinks }: PropsType) => {
                                 key={link.text}
                                 url={link.url}
                                 text={link.text}
-                                extraClasses="font-gordita leading-10 text-sm opacity-70 hover:opacity-100 focus:opacity-100"
+                                extraClasses="font-gordita leading-10 text-sm opacity-70 hover:opacity-100 focus-within:opacity-100"
                             />
                         )
                     })

@@ -7,24 +7,24 @@ import ListItemLinks from '../Global/LILinks/ListItemLinks';
 
 const Aside = () => {
   return (
-    <aside className="pt-12 flex justify-between text-white wrapper">
-      <ul className="flex justify-between gap-4">
-        <ListItemLinks url='/' text='Privacy & Terms' extraClasses='hover:opacity-70'/>
-        <ListItemLinks url='/' text='Contact Us' extraClasses='hover:opacity-70'/>
+    <aside className="pt-12 flex flex-col justify-between text-white wrapper xl:flex-row">
+      <ul className="flex flex-col text-center justify-between gap-4 xl:flex-row">
+        <ListItemLinks url='/' text='Privacy & Terms' extraClasses='hover:opacity-70 focus-within:opacity-70  '/>
+        <ListItemLinks url='/' text='Contact Us' extraClasses='hover:opacity-70 focus-within:opacity-70 '/>
       </ul>
-      <p className="text-xs opacity-60">Copyright @2022 jobi inc.</p>
-      <ul className="flex justify-between gap-4">
-        <li className='transition-all hover:opacity-70 focus:opacity-70'>
+      <p className="text-xs opacity-60 my-4 text-center xl:my-0 xl:text-left">Copyright @2022 jobi inc.</p>
+      <ul className="flex justify-center gap-4 xl:justify-between">
+        <li className='transition-all hover:opacity-70 focus-within:opacity-70'>
           <a href="/">
             <img src={logoFacebook} alt="Visit our Facebook page" />
           </a>
         </li>
-        <li className='transition-all hover:opacity-70 focus:opacity-70'>
+        <li className='transition-all hover:opacity-70 focus-within:opacity-70'>
           <a href="/">
             <img src={logoInstagram} alt="Visit our Instagram page" />
           </a>
         </li>
-        <li className='transition-all hover:opacity-70 focus:opacity-70'>
+        <li className='transition-all hover:opacity-70 focus-within:opacity-70'>
           <a href="/">
             <img src={logoPinterest} alt="Visit our Pinterest page" />
           </a>

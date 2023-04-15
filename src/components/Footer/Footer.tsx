@@ -5,7 +5,7 @@ import FooterNav from './Nav/FooterNav';
 const Footer = () => {
     return (
         <footer className="font-gordita bg-jobi-green-dark text-white py-16">
-            <div className="flex wrapper">
+            <div className="flex wrapper-sm md:wrapper">
                 <FooterNav />
             </div>
             <Aside />
