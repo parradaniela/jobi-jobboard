@@ -21,7 +21,7 @@ const AccordionItem = ({ children, heading, index }: Props) => {
                 aria-controls={`content-${index}`}
                 aria-expanded={selected === index ? "true" : "false"}
                 id={`accordion-control-${index}`}
-                className="text-2xl text-jobi-green-dark font-gorditaSemibold leading-loose cursor-pointer"
+                className="text-2xl text-jobi-green-dark font-gorditaSemibold leading-loose cursor-pointer text-left"
             >
                 {heading} <span className="-rotate-45">&rsaquo;</span>
             </button>
