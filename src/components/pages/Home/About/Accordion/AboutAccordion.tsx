@@ -5,7 +5,7 @@ const AboutAccordion = () => {
     
     return (
         <div className="flex flex-col basis-1/2">
-            <h2 className="text-center md:text-left ">
+            <h2 className="text-center lg:text-left ">
                 <span className="text-jobi-green-bright text-base leading-loose font-gordita">Why choose us?</span>
                 <span className="text-jobi-green-dark block text-4xl md:text-6xl font-gorditaSemibold  capitalize leading-tight">A world of talent at your fingertips</span>
             </h2>
@@ -20,7 +20,7 @@ const AboutAccordion = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maiores quod quae, quos facilis dolorum esse quis sit velit! Officia?
                 </AccordionItem>
             </ul>
-            <div className="w-1/2 self-center">
+            <div className="w-1/2 self-center lg:self-start">
                 <Anchor style="btn-green" corners="rounded-full" url="/" extraClasses="w-1/5 flex justify-center items-center my-4">
                     Learn more
                 </Anchor>

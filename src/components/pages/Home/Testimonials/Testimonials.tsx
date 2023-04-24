@@ -18,7 +18,7 @@ const Testimonials = () => {
                             <IonIcon icon={arrowBackOutline} className="text-2xl" />
                             <span className="sr-only">Previous reviews</span>
                         </button>
-                        <button className="transition-all border-1 border-jobi-green-bright bg-jobi-green-bright p-[10px] rounded-full flex items-center hover:bg-jobi-green-lime hover:border-jobi-green-lime hover:text-black focus:bg-jobi-green-lime focus:border-jobi-green-lime focus:text-black">
+                        <button className="transition-all border-1 text-black border-jobi-green-lime bg-jobi-green-lime p-[10px] rounded-full flex items-center hover:bg-jobi-green-bright hover:border-jobi-green-bright focus:bg-jobi-green-bright focus:border-jobi-green-bright">
                         <IonIcon icon={arrowForwardOutline} className="text-2xl" />
                             <span className="sr-only">Next reviews</span>
                         </button>

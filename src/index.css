@@ -48,7 +48,11 @@
   }
 
   .btn-green {
-    @apply bg-jobi-green-bright border-jobi-green-bright text-white hover:bg-jobi-green-lime hover:border-jobi-green-lime hover:text-jobi-green-dark focus:bg-jobi-green-lime focus:border-jobi-green-lime focus:text-jobi-green-dark
+    @apply bg-jobi-green-dark border-jobi-green-dark text-white hover:bg-jobi-green-lime hover:border-jobi-green-lime hover:text-jobi-green-dark focus:bg-jobi-green-lime focus:border-jobi-green-lime focus:text-jobi-green-dark
+  }
+
+  .btn-lime {
+    @apply  bg-jobi-green-lime border-jobi-green-lime text-black hover:bg-jobi-green-bright hover:border-jobi-green-bright focus:bg-jobi-green-bright focus:border-jobi-green-bright
   }
 
   .btn-outline {

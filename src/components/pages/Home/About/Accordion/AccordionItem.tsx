@@ -20,12 +20,12 @@ const AccordionItem = ({ children, heading, index }: Props) => {
         setSelected(index)
     }
     return (
-        <li className="border-b-gray-300 border-b-1 py-6 transition-all" onClick={() => onClickToggleSelected(index)}>
+        <li className="border-b-gray-300 border-b-1 py-6 transition-all text-center lg:text-left" onClick={() => onClickToggleSelected(index)}>
             <button
                 aria-controls={`content-${index}`}
                 aria-expanded={selected === index ? "true" : "false"}
                 id={`accordion-control-${index}`}
-                className="text-2xl text-jobi-green-dark font-gorditaSemibold leading-loose cursor-pointer text-left flex gap-4 items-center"
+                className="w-full text-2xl text-jobi-green-dark font-gorditaSemibold leading-loose cursor-pointer flex gap-4 justify-center items-center lg:justify-start"
             >
                 {heading}
                 <span>

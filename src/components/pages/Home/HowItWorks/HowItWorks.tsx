@@ -15,7 +15,7 @@ const HowItWorks = () => {
                         <img src={playIcon} alt="How does it work?" />
                     </div>
                     <h2 className="text-6xl font-medium text-white">Let's get started.</h2>
-                    <p className="text-4xl lg:text-6xl text-white py-8">It's <span className="text-jobi-green-lime lg:text-jobi-green-bright">simple.</span></p>
+                    <p className="text-4xl lg:text-6xl text-white py-8">It's <span className="text-jobi-green-lime">simple.</span></p>
                     <p className='text-white'>Get access to our top 1% talent as well as a complete set of hybrid workforce management tools.</p>
                 </div>
                 <ul className="flex flex-wrap justify-center items-center gap-12">

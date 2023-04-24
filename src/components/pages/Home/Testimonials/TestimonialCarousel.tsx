@@ -12,7 +12,7 @@ const TestimonialCarousel = ({heading, text, name, location, img}: Props) => {
     return (
         <li className="bg-white p-8 rounded-md self-stretch md:p-11 md:w-2/3 lg:w-2/5">
             <div className="flex items-center justify-between">
-                <h3 className="text-lg text-jobi-green-bright leading-loose">
+                <h3 className="text-lg text-jobi-green-dark leading-loose">
                     {heading}
                     <span className="block">⭐⭐⭐⭐⭐</span>
                 </h3>

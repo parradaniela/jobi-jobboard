@@ -47,7 +47,7 @@ const Nav = () => {
 
                 <div className="flex flex-col gap-8 md:flex-row">
                     <Button style="btn-outline" corners="rounded-full">Login/Sign Up</Button>
-                    <Button style="btn-green" corners="rounded-full">Post a job</Button>
+                    <Button style="btn-lime" corners="rounded-full">Post a job</Button>
                 </div>
             </nav>
         </>

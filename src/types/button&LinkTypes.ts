@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 
-type ButtonColorClasses = 'btn-green' | 'btn-outline' | 'btn-blue' | 'btn-cream' | 'btn-pink' | 'btn-lightgreen' | 'btn-lavender' | 'btn-orange'
+type ButtonColorClasses = 'btn-green' | 'btn-outline' | 'btn-lime' | 'btn-blue' | 'btn-cream' | 'btn-pink' | 'btn-lightgreen' | 'btn-lavender' | 'btn-orange'
 
 export interface ButtonProps {
     children?: ReactNode,

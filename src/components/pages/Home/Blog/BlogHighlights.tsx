@@ -14,7 +14,7 @@ const BlogHighlights = () => {
         <h2 className="text-4xl md:text-6xl text-jobi-green-dark">Jobi Guides</h2>
         <NavLink
           to="/"
-          className="text-sm text-jobi-green-bright py-2 border-b-2 border-b-jobi-green-bright transition-all hover:text-jobi-green-dark hover:border-b-jobi-green-dark focus:text-jobi-green-dark focus:border-b-jobi-green-dark"
+          className="text-sm text-jobi-green-dark py-2 border-b-2 border-b-jobi-green-dark transition-all hover:text-jobi-black/50 hover:border-b-black/50 focus:text-black/50 focus:border-b-black/50"
         >
           Explore More &rsaquo;
         </NavLink>

@@ -21,7 +21,6 @@ module.exports = {
         "jobi-black": "#0F1620",
         "jobi-grey": "#C4C4C4",
         "jobi-grey-light": "#F7F7F7",
-        "jobi-grey-light": "#F5F5F5",
         "jobi-blue": "#EAFBFD",
         "jobi-cream": "#FFFAEC",
         "jobi-pink": "#FFEBFB",

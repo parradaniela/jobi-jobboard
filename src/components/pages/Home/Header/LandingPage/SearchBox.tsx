@@ -24,7 +24,7 @@ const SearchBox = () => {
           </select>
         </div>
 
-        <Button style="btn-green" corners="rounded" extraClasses="self-stretch flex items-center px-8 md:rounded-l-none ">Search</Button>
+        <Button style="btn-lime" corners="rounded" extraClasses="self-stretch flex items-center px-8 md:rounded-l-none ">Search</Button>
       </fieldset>
     </form>
   )

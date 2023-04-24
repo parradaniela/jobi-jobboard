@@ -9,7 +9,7 @@ const BannerBottom = () => {
                     <p className="text-lg text-white">Find your dream job & earn from all worldwide leading brands</p>
                     <div className="flex flex-col justify-center items-center gap-4 py-8 md:flex-row">
                         <Anchor style="btn-outline" corners="rounded" url="/">Looking for a job?</Anchor>
-                        <Anchor style="btn-green" corners="rounded" url="/">Start Hiring</Anchor>
+                        <Anchor style="btn-lime" corners="rounded" url="/">Start Hiring</Anchor>
                     </div>
                 </div>
             </div>
