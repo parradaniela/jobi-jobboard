@@ -21,7 +21,7 @@ const AboutAccordion = () => {
                 </AccordionItem>
             </ul>
             <div className="w-1/2 self-center lg:self-start">
-                <Anchor style="btn-green" corners="rounded-full" url="/" extraClasses="w-1/5 flex justify-center items-center my-4">
+                <Anchor style="btn-green" corners="rounded-full" url="/" extraClasses="w-1/5 flex justify-center items-center my-4 lg:w-2/3">
                     Learn more
                 </Anchor>
             </div>

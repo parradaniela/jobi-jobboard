@@ -9,10 +9,10 @@ type PropsType = {
 const LogoHorizontal = ({ children, alt }: PropsType) => {
     return (
         <div className='transition-all border-2 border-transparent rounded-lg p-1 hover:border-jobi-green-lime focus-within:border-jobi-green-lime'>
-            <Link to="/" >
+            <a href="#header" >
                 <img src={jobiLogo} alt={alt} />
                 {children}
-            </Link>
+            </a>
         </div>
     )
 }

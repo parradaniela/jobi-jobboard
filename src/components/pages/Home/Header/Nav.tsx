@@ -14,7 +14,7 @@ const Nav = () => {
     const toggleMobileMenu = () => setOpen(!open)
     return (
         <>
-            <button className="ml-[75%] mt-4 text-white text-6xl transition-all border-transparent rounded-lg p-1 border-2 hover:border-white focus:border-white md:hidden " onClick={toggleMobileMenu}>
+            <button className="ml-[80%] mt-4 text-white text-6xl transition-all border-transparent rounded-lg p-1 border-2 hover:border-white focus:border-white md:hidden " onClick={toggleMobileMenu}>
                 <span className="sr-only">Open navigation menu</span>
                 <IonIcon icon={menuOutline} />
             </button>

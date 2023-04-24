@@ -16,7 +16,7 @@ const BlogHighlights = () => {
           to="/"
           className="text-sm text-jobi-green-dark py-2 border-b-2 border-b-jobi-green-dark transition-all hover:text-jobi-black/50 hover:border-b-black/50 focus:text-black/50 focus:border-b-black/50"
         >
-          Explore More &rsaquo;
+          Explore all posts &rsaquo;
         </NavLink>
       </div>
       <div className="flex flex-wrap gap-4 py-8 lg:justify-evenly">

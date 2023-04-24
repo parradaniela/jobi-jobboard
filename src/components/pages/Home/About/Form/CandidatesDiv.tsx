@@ -5,8 +5,9 @@ import headshotOne from "../../../../../assets/index/headshots/headshot-alexande
 import headshotTwo from "../../../../../assets/index/headshots/headshot-brian-lundquist.jpg";
 import headshotThree from "../../../../../assets/index/headshots/headshot-alex-starnes.jpg";
 import headshotFour from "../../../../../assets/index/headshots/headshot-zahir-namane.jpg";
-//plusIcon courtesy of Ionicons https://ionic.io/ionicons
-import plusIcon from "../../../../../assets/index/icons/add-outline.svg";
+//ionicons
+import { IonIcon } from "@ionic/react";
+import { addOutline } from "ionicons/icons";
 
 const CandidatesDiv = () => {
     return (
@@ -25,8 +26,9 @@ const CandidatesDiv = () => {
                 <div className="w-16 h-16 rounded-full border-4 border-white absolute left-3 top-0 z-30 overflow-hidden">
                     <img src={headshotFour} alt="Headshot of one of our candidates"  />
                 </div>
-                <NavLink to="/" className="w-16 h-16 rounded-full border-4 border-white absolute left-14 top-0 z-40 bg-slate-400 transition-all hover:bg-slate-200">
-                    <img src={plusIcon} alt="Click here to view all our candidates" />
+                <NavLink to="/" className="w-16 h-16 rounded-full border-4 flex justify-center items-center border-white absolute left-14 top-0 z-40 bg-slate-400 transition-all hover:bg-slate-200 focus:bg-slate-200">
+                    <span className="sr-only">Click here to navigate to our candidates page</span>
+                    <IonIcon icon={addOutline} className="text-6xl"/>
                 </NavLink>
             </div>
         </div>
