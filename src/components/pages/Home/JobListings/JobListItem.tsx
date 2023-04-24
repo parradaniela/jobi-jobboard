@@ -34,6 +34,7 @@ const JobListItem = ({title, type, date, company, country, city, categories, id}
             </div>
             <div className="justify-self-center flex justify-center items-center gap-4 w-2/3 md:w-auto">
                 <button className="flex justify-center border-1 text-jobi-green-dark border-jobi-green-dark rounded-full transition-colors hover:bg-jobi-green-lime focus:bg-jobi-green-lime hover:border-jobi-green-lime focus:border-jobi-green-lime md:scale-100">
+                    <span className="sr-only">Click here to bookmark this job posting</span>
                     <IonIcon icon={bookmarksOutline} className="text-lg p-4 md:p-2"/>
                 </button>
                 <Button style="btn-green" corners="rounded-full">Apply</Button>

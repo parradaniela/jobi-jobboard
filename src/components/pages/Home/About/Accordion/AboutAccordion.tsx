@@ -6,7 +6,7 @@ const AboutAccordion = () => {
     return (
         <div className="flex flex-col basis-1/2">
             <h2 className="text-center lg:text-left ">
-                <span className="text-jobi-green-bright text-base leading-loose font-gordita">Why choose us?</span>
+                <span className="text-jobi-green-dark text-base leading-loose font-gordita">Why choose us?</span>
                 <span className="text-jobi-green-dark block text-4xl md:text-6xl font-gorditaSemibold  capitalize leading-tight">A world of talent at your fingertips</span>
             </h2>
             <ul className="py-4" aria-label="Accordion Control Group Buttons">

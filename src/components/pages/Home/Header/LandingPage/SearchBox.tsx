@@ -8,12 +8,12 @@ const SearchBox = () => {
         <legend className="sr-only">Search jobs, companies or keywords by category</legend>
 
         <div className="flex flex-col bg-white p-3 rounded-md md:rounded-r-none self-stretch">
-          <label htmlFor="searchText" className="text-gray-400 text-xs px-2">Enter your job title, keyword or company</label>
+          <label htmlFor="searchText" className="text-jobi-black text-xs px-2">Enter your job title, keyword or company</label>
           <input type="text" id="searchText" className="text-sm p-2 my-1" />
         </div>
 
         <div className="flex flex-col bg-white p-3 my-4 rounded-md w-full md:w-auto md:my-0 md:rounded-none">
-          <label htmlFor="category" className="text-gray-400 text-xs px-2 self-stretch">Category</label>
+          <label htmlFor="category" className="text-jobi-black text-xs px-2 self-stretch">Category</label>
           <select id="category" className="text-sm p-2 my-1 bg-white">
             <option value="" className="text-sm">Select a category</option>
             <option value="webDesign">Web design</option>
