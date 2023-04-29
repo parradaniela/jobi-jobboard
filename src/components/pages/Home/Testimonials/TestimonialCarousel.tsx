@@ -8,7 +8,7 @@ type Props = {
     img: string
 }
 
-const TestimonialCarousel = ({heading, text, name, location, img}: Props) => {
+const TestimonialCarousel = ({ heading, text, name, location, img }: Props) => {
     return (
         <li className="bg-white p-8 rounded-md self-stretch md:p-11 md:w-2/3 lg:w-2/5">
             <div className="flex items-center justify-between">
@@ -26,7 +26,7 @@ const TestimonialCarousel = ({heading, text, name, location, img}: Props) => {
                     <span className="font-bold">{name},</span> {location}
                 </p>
                 <div className="h-20 w-20 rounded-full overflow-hidden">
-                    <img src={img} alt={name} />
+                    <img src={img} alt={name} title={name} />
                 </div>
             </div>
         </li>

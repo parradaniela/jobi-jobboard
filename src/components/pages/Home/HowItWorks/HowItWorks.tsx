@@ -12,7 +12,7 @@ const HowItWorks = () => {
             <div className="wrapper-sm md:wrapper flex flex-col gap-4 xl:gap-8">
                 <div className="flex flex-col items-center text-center xl:text-left xl:self-end xl:items-start xl:w-1/3 mx-10">
                     <div className='my-2'>
-                        <img src={playIcon} alt="How does it work?" />
+                        <img src={playIcon} alt="How does it work?" title="How does it work?" />
                     </div>
                     <h2 className="text-6xl font-medium text-white">Let's get started.</h2>
                     <p className="text-4xl lg:text-6xl text-white py-8">It's <span className="text-jobi-green-lime">simple.</span></p>
