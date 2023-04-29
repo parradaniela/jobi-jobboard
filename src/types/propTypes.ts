@@ -5,8 +5,9 @@ export type AccordionItemProps = {
     heading: string,
     index: number
 }
-
-type ButtonColorClasses = 'btn-green' | 'btn-outline' | 'btn-lime' | 'btn-blue' | 'btn-cream' | 'btn-pink' | 'btn-lightgreen' | 'btn-lavender' | 'btn-orange'
+export interface AnchorProps extends ButtonProps {
+    url: string
+}
 
 export interface ButtonProps {
     children?: ReactNode,
@@ -15,9 +16,7 @@ export interface ButtonProps {
     extraClasses?: string,
 }
 
-export interface AnchorProps extends ButtonProps {
-    url: string
-}
+type ButtonColorClasses = 'btn-green' | 'btn-outline' | 'btn-lime' | 'btn-blue' | 'btn-cream' | 'btn-pink' | 'btn-lightgreen' | 'btn-lavender' | 'btn-orange'
 
 export type HighlightArticleProps = {
     img: string,
@@ -37,7 +36,6 @@ export type StepCardProps = {
     linkText: string,
     stepNumber: string
 }
-
 
 export type TestimonialCarouselProps = {
     heading: string,

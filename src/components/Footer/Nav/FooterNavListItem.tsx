@@ -9,7 +9,7 @@ type PropsType = {
 const FooterNavListItem = ({ heading, navLinks }: PropsType) => {
     return (
         <li className="transition-all px-10 md:px-14 lg:px-20 xl:px-10 sm:self-start">
-            <h3 className="text-xl font-circularStd font-medium leading-normal">{heading}</h3>
+            <p className="text-xl font-circularStd font-medium leading-normal">{heading}</p>
             <ul>
                 {
                     navLinks.map(link => {
