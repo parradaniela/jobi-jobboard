@@ -1,8 +1,9 @@
+//Component imports
 import Anchor from "../../../../Global/Buttons/Anchor"
 import AccordionItem from "./AccordionItem"
 
 const AboutAccordion = () => {
-    
+
     return (
         <div className="flex flex-col basis-1/2">
             <h2 className="text-center lg:text-left ">
@@ -22,7 +23,7 @@ const AboutAccordion = () => {
             </ul>
             <div className="w-1/2 self-center lg:self-start">
                 <Anchor style="btn-green" corners="rounded-full" url="/" extraClasses="w-1/5 flex justify-center items-center my-4 lg:w-2/3">
-                    Learn more
+                    Learn more about our services
                 </Anchor>
             </div>
         </div>

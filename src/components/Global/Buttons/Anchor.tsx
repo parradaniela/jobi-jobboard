@@ -1,12 +1,12 @@
 //router import
 import { NavLink } from "react-router-dom"
 //type imports
-import { AnchorProps } from "../../../types/button&LinkTypes"
+import { AnchorProps } from "../../../types/propTypes"
 
 const Anchor = ({ children, style, corners, extraClasses, url }: AnchorProps) => {
     return (
         <NavLink
-            to={url}   
+            to={url}
             className={`
             flex justify-center items-center gap-3 border-2 px-4 py-1.5 transition-all w-full md:w-auto
             ${style} 

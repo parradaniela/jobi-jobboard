@@ -1,7 +1,7 @@
 //react router imports
 import { NavLink } from "react-router-dom"
 //type imports
-import { ListItemLinkProps } from "../../../types/button&LinkTypes"
+import { ListItemLinkProps } from "../../../types/propTypes"
 
 const ListItemLinks = ({ url, text, extraClasses }: ListItemLinkProps) => {
     return (

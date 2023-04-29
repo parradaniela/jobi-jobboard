@@ -1,14 +1,9 @@
+//image imports
 import quotations from "../../../../assets/index/button-icons/icon-quotes.svg";
+//type imports
+import { TestimonialCarouselProps } from "../../../../types/propTypes";
 
-type Props = {
-    heading: string,
-    text: string,
-    name: string,
-    location: string,
-    img: string
-}
-
-const TestimonialCarousel = ({ heading, text, name, location, img }: Props) => {
+const TestimonialCarousel = ({ heading, text, name, location, img }: TestimonialCarouselProps) => {
     return (
         <li className="bg-white p-8 rounded-md self-stretch md:p-11 md:w-2/3 lg:w-2/5">
             <div className="flex items-center justify-between">

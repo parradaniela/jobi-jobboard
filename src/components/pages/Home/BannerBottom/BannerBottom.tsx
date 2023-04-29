@@ -1,3 +1,4 @@
+//Component imports
 import Anchor from "../../../Global/Buttons/Anchor"
 
 const BannerBottom = () => {

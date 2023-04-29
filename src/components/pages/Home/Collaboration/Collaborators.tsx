@@ -1,4 +1,6 @@
+//React imports
 import { NavLink } from "react-router-dom"
+//Image imports
 import shape from "../../../../assets/index/Images.png"
 
 const Collaboration = () => {

@@ -1,4 +1,6 @@
+//React imports
 import { NavLink } from "react-router-dom";
+//Components
 import CategoryButtons from "./CategoryButtons";
 
 const Categories = () => {

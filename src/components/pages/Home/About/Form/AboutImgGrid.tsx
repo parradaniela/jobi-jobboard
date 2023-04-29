@@ -1,3 +1,4 @@
+//Image imports
 import headshot1x2 from "../../../../../assets/index/headshots/headshot-viktor-forgacs.jpg";
 import headshot1x1 from "../../../../../assets/index/headshots/headshot-michael-dam.jpg";
 import headshot2x2 from "../../../../../assets/index/headshots/headshot-jason-moyer.jpg";

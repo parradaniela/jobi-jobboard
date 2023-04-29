@@ -8,7 +8,7 @@ const JobsAside = () => {
         <span className="block text-jobi-green-dark font-semibold md:inline-block">
           We can help.&nbsp;
           <NavLink to="/" className="font-normal underline hover:text-jobi-green-bright focus:text-jobi-green-bright transition-colors">
-            Click here
+            Click here for more information
           </NavLink>
         </span>
       </p>

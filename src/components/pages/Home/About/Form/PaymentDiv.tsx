@@ -1,3 +1,4 @@
+//Image imports
 import checkmark from "../../../../../assets/index/icons/icon-checkmark.svg"
 
 const PaymentDiv = () => {

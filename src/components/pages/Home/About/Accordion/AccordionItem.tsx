@@ -1,16 +1,12 @@
 //react imports
-import { ReactNode, useState } from "react"
+import { useState } from "react"
 //ionicons
 import { IonIcon } from "@ionic/react"
 import { chevronDownOutline } from "ionicons/icons"
+//types
+import { AccordionItemProps } from "../../../../../types/propTypes"
 
-type Props = {
-    children: ReactNode,
-    heading: string,
-    index: number
-}
-
-const AccordionItem = ({ children, heading, index }: Props) => {
+const AccordionItem = ({ children, heading, index }: AccordionItemProps) => {
     const [selected, setSelected] = useState<number | null>(null)
 
     const onClickToggleSelected = (index: number) => {

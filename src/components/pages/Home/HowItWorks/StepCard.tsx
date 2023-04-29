@@ -1,7 +1,7 @@
 //react imports
 import { NavLink } from "react-router-dom"
 //type imports
-import { StepCardProps } from "../../../../types/button&LinkTypes"
+import { StepCardProps } from "../../../../types/propTypes"
 
 const StepCard = ({ src, text, url, linkText, stepNumber }: StepCardProps) => {
     return (

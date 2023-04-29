@@ -1,5 +1,5 @@
+//Component imports
 import Button from "../../../../Global/Buttons/Button"
-
 
 const SearchBox = () => {
   return (

@@ -1,3 +1,4 @@
+//Image imports
 import Button from "../../../Global/Buttons/Button"
 import penIcon from '../../../../assets/index/icons/icon-pen.svg';
 import codeIcon from '../../../../assets/index/icons/icon-code.svg';
@@ -41,7 +42,7 @@ const CategoryButtons = () => {
             </li>
             <li className="w-full sm:w-2/3 md:w-auto">
                 <Button style="btn-orange" corners="rounded-full">
-                    <img src={barsIcon} alt="Barsicon" />
+                    <img src={barsIcon} alt="Bars icon" />
                     Editing
                 </Button>
             </li>
