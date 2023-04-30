@@ -3,7 +3,7 @@ import Button from "../../../../Global/Buttons/Button"
 
 const SearchBox = () => {
   return (
-    <form action="submit" className="my-12 w-full sm:w-3/4 md:w-auto">
+    <form action="submit" role="search" className="my-12 w-full sm:w-3/4 md:w-auto">
       <fieldset className="flex flex-col md:flex-row items-center">
         <legend className="sr-only">Search jobs, companies or keywords by category</legend>
 
@@ -24,7 +24,7 @@ const SearchBox = () => {
           </select>
         </div>
 
-        <Button style="btn-lime" corners="rounded" extraClasses="self-stretch flex items-center px-8 md:rounded-l-none ">Search</Button>
+        <Button style="btn-lime" corners="rounded" extraClasses="self-stretch flex items-center px-8 md:rounded-l-none" aria-label="Click here to see your search results">Search</Button>
       </fieldset>
     </form>
   )

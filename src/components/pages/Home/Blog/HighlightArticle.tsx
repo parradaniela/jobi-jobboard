@@ -9,8 +9,7 @@ import { HighlightArticleProps } from "../../../../types/propTypes"
 const HighlightArticle = ({ img, alt }: HighlightArticleProps) => {
     return (
         <article className="lg:w-1/4">
-            <NavLink to="/" className="flex flex-col gap-4 p-4 transition-all hover:bg-jobi-green-light hover:-translate-y-4 focus:bg-jobi-green-light focus:-translate-y-4 group sm:flex-row lg:flex-col">
-                <span className="sr-only">Click to read this blog post</span>
+            <NavLink to="/" className="flex flex-col gap-4 p-4 transition-all hover:bg-jobi-green-light hover:-translate-y-4 focus:bg-jobi-green-light focus:-translate-y-4 group sm:flex-row lg:flex-col" aria-label="Read the full blog post">
                 <div className="sm:w-2/3 lg:w-full">
                     <img src={img} alt={alt} title="Blog image" />
                 </div>

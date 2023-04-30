@@ -12,37 +12,37 @@ const CategoryButtons = () => {
         <ul className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-8 py-12 font-gordita">
             <li className="w-full sm:w-2/3 md:w-auto">
                 <Button style="btn-blue" corners="rounded-full">
-                    <img src={penIcon} alt="Fountain pen icon" />
+                    <img src={penIcon} role="presentation" />
                     UI/UX Design
                 </Button>
             </li>
             <li className="w-full sm:w-2/3 md:w-auto">
                 <Button style="btn-cream" corners="rounded-full">
-                    <img src={codeIcon} alt="Code icon" />
+                    <img src={codeIcon} role="presentation" />
                     Development
                 </Button>
             </li>
             <li className="w-full sm:w-2/3 md:w-auto">
                 <Button style="btn-pink" corners="rounded-full">
-                    <img src={bagIcon} alt="Bag icon" />
+                    <img src={bagIcon} role="presentation" />
                     Marketing
                 </Button>
             </li>
             <li className="w-full sm:w-2/3 md:w-auto">
                 <Button style="btn-lightgreen" corners="rounded-full">
-                    <img src={phoneIcon} alt="Phone Receiver icon" />
+                    <img src={phoneIcon} role="presentation" />
                     Telemarketing
                 </Button>
             </li>
             <li className="w-full sm:w-2/3 md:w-auto">
                 <Button style="btn-lavender" corners="rounded-full">
-                    <img src={courtIcon} alt="Courthouse icon" />
+                    <img src={courtIcon} role="presentation" />
                     Accounting
                 </Button>
             </li>
             <li className="w-full sm:w-2/3 md:w-auto">
                 <Button style="btn-orange" corners="rounded-full">
-                    <img src={barsIcon} alt="Bars icon" />
+                    <img src={barsIcon} role="presentation" />
                     Editing
                 </Button>
             </li>

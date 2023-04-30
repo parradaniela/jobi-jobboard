@@ -14,8 +14,7 @@ const Nav = () => {
     const toggleMobileMenu = () => setOpen(!open)
     return (
         <>
-            <button className="ml-[80%] mt-4 text-white text-6xl transition-all border-transparent rounded-lg p-1 border-2 hover:border-white focus:border-white md:hidden " onClick={toggleMobileMenu}>
-                <span className="sr-only">Open navigation menu</span>
+            <button className="ml-[80%] mt-4 text-white text-6xl transition-all border-transparent rounded-lg p-1 border-2 hover:border-white focus:border-white md:hidden " onClick={toggleMobileMenu} aria-label="Open navigation menu">
                 <IonIcon icon={menuOutline} />
             </button>
             <nav
@@ -31,8 +30,7 @@ const Nav = () => {
                     <LogoHorizontal alt="Jobi Home Page">
                         <h1 className="sr-only">Jobi</h1>
                     </LogoHorizontal>
-                    <button className="text-white text-6xl transition-all border-transparent rounded-lg p-1 border-2 hover:text-jobi-green-lime focus:text-jobi-green-lime md:hidden" onClick={toggleMobileMenu}>
-                        <span className="sr-only">Close navigation menu</span>
+                    <button className="text-white text-6xl transition-all border-transparent rounded-lg p-1 border-2 hover:text-jobi-green-lime focus:text-jobi-green-lime md:hidden" onClick={toggleMobileMenu} aria-label="Close navigation menu">
                         <IonIcon icon={closeCircleOutline} />
                     </button>
                 </div>

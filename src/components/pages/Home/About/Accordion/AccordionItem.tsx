@@ -20,6 +20,7 @@ const AccordionItem = ({ children, heading, index }: AccordionItemProps) => {
             <button
                 aria-controls={`content-${index}`}
                 aria-expanded={selected === index ? "true" : "false"}
+                aria-label="Click to toggle more information"
                 id={`accordion-control-${index}`}
                 className="w-full text-2xl text-jobi-green-dark font-gorditaSemibold leading-loose cursor-pointer flex gap-4 justify-center items-center lg:justify-start"
             >

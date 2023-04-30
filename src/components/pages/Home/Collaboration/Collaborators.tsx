@@ -13,7 +13,7 @@ const Collaboration = () => {
                 <span className="uppercase text-gray-400 leading-loose">Top brand</span>
                 <h2 className="text-4xl lg:text-6xl py-4">Collaboration with Top Brands</h2>
                 <p className="text-base py-4 leading-loose">We collaborate with a number of top tier companies on imagining the future of work. Have a look.</p>
-                <NavLink to="/" className="text-base text-jobi-green-dark font-bold hover:text-jobi-green-bright focus:text-jobi-green-bright transition-all">Learn more &rarr;</NavLink>
+                <NavLink to="/" className="text-base text-jobi-green-dark font-bold hover:text-jobi-green-bright focus:text-jobi-green-bright transition-all" aria-label="Learn more about which companies collaborate with us">Learn more &rarr;</NavLink>
             </div>
         </section>
     )

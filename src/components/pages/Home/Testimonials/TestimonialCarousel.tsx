@@ -11,7 +11,7 @@ const TestimonialCarousel = ({ heading, text, name, location, img }: Testimonial
                     {heading}
                     <span className="block">⭐⭐⭐⭐⭐</span>
                 </h3>
-                <img src={quotations} alt="Quotation marks icon" />
+                <img src={quotations} role="presentation" />
             </div>
             <p className="text-base leading-loose py-6">
                 {text}
@@ -21,7 +21,7 @@ const TestimonialCarousel = ({ heading, text, name, location, img }: Testimonial
                     <span className="font-bold">{name},</span> {location}
                 </p>
                 <div className="h-20 w-20 rounded-full overflow-hidden">
-                    <img src={img} alt={name} title={name} />
+                    <img src={img} alt={name} />
                 </div>
             </div>
         </li>
