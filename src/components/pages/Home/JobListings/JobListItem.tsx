@@ -3,6 +3,8 @@ import { JobData } from "../../../../types/dataTypes"
 // component imports
 import Button from "../../../Global/Buttons/Button"
 //image imports
+import bookmarkImg from "../../../../assets/index/button-icons/icon-bookmark.svg"
+//ionicons
 import { IonIcon } from "@ionic/react"
 import { desktopOutline, bookmarksOutline } from "ionicons/icons"
 
@@ -10,7 +12,7 @@ const JobListItem = ({ title, type, date, company, country, city, categories, id
     return (
         //TODO: Readjust this to have more columns and have each div take up different amount of columns
         <li className="text-black transition-all w-full grid grid-auto-rows gap-4 items-center text-center px-4 py-4 border-1 border-gray-200 rounded-xl group md:text-left md:grid-cols-4 lg:grid-cols-5 lg:w-4/5 md:justify-center">
-            <div className="w-1/5 justify-self-center hidden lg:block">
+            <div className="w-1/5 justify-self-center hidden lg:block" aria-hidden="true">
                 <IonIcon icon={desktopOutline} className="text-6xl" role="presentation" />
             </div>
             <h3 className="text-center font-gorditaSemibold capitalize text-lg md:text-base">{title}</h3>
@@ -31,9 +33,9 @@ const JobListItem = ({ title, type, date, company, country, city, categories, id
                     }
                 </div>
             </div>
-            <div className="justify-self-center flex justify-center items-center gap-4 w-2/3 md:w-auto">
-                <button className="flex justify-center border-1 text-jobi-green-dark border-jobi-green-dark rounded-full transition-colors hover:bg-jobi-green-lime focus:bg-jobi-green-lime hover:border-jobi-green-lime focus:border-jobi-green-lime md:scale-100" aria-label="Click here to bookmark this job posting">
-                    <IonIcon icon={bookmarksOutline} className="text-lg p-4 md:p-2" role="presentation" />
+            <div className="justify-self-center flex justify-center items-center gap-4 w-2/3 sm:w-1/3 md:w-auto">
+                <button className="w-12 h-12 flex justify-center border-1 border-black bg-black p-3 rounded-full transition-colors hover:bg-gray-400 focus:bg-gray-400 hover:border-gray-400 focus:border-gray-400 sm:w-10 sm:h-10 sm:p-2" aria-label="Bookmark">
+                    <img src={bookmarkImg} alt="Click to bookmark this job posting" />
                 </button>
                 <Button ariaLabel="Click here to apply to this job" style="btn-green" corners="rounded-full">Apply</Button>
             </div>
