@@ -1,4 +1,7 @@
+//React imports
 import { ReactNode } from "react"
+//Type imports
+import { FooterData } from "./dataTypes"
 
 export type AccordionItemProps = {
     children: ReactNode,
@@ -14,9 +17,15 @@ export interface ButtonProps {
     style: ButtonColorClasses,
     corners: 'rounded-full' | 'rounded',
     extraClasses?: string,
+    ariaLabel: string
 }
 
 type ButtonColorClasses = 'btn-green' | 'btn-outline' | 'btn-lime' | 'btn-blue' | 'btn-cream' | 'btn-pink' | 'btn-lightgreen' | 'btn-lavender' | 'btn-orange'
+
+export type FooterProps = {
+    heading: string,
+    navLinks: FooterData[]
+}
 
 export type HighlightArticleProps = {
     img: string,
@@ -33,8 +42,7 @@ export type StepCardProps = {
     src: string,
     text: string,
     url: string,
-    linkText: string,
-    stepNumber: string
+    linkText: string
 }
 
 export type TestimonialCarouselProps = {

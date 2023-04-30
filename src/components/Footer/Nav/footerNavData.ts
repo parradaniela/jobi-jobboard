@@ -1,7 +1,5 @@
-export type FooterData = {
-    url: string,
-    text: string
-}
+//type import
+import { FooterData } from "../../../types/dataTypes"
 
 export const footerNavLinks: FooterData[] = [
     {

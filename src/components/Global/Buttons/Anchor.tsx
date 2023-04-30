@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 //type imports
 import { AnchorProps } from "../../../types/propTypes"
 
-const Anchor = ({ children, style, corners, extraClasses, url }: AnchorProps) => {
+const Anchor = ({ children, style, corners, extraClasses, url, ariaLabel }: AnchorProps) => {
     return (
         <NavLink
             to={url}
@@ -13,6 +13,7 @@ const Anchor = ({ children, style, corners, extraClasses, url }: AnchorProps) =>
             ${corners} 
             ${extraClasses ? extraClasses : ''}
             `}
+            aria-label={ariaLabel}
         >
             {children}
         </NavLink>

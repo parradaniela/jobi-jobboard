@@ -1,6 +1,6 @@
 import { ButtonProps } from "../../../types/propTypes"
 
-const Button = ({ children, style, corners, extraClasses }: ButtonProps) => {
+const Button = ({ children, style, corners, extraClasses, ariaLabel }: ButtonProps) => {
 
     return (
         <button
@@ -10,6 +10,7 @@ const Button = ({ children, style, corners, extraClasses }: ButtonProps) => {
             ${corners} 
             ${extraClasses ? extraClasses : ''}
             `}
+            aria-label={ariaLabel}
         >
             {children}
         </button>

@@ -1,5 +1,16 @@
 import { ReactNode } from "react";
 
+export type ContextChildren = { children: ReactNode }
+
+export interface DatabaseContextInterface {
+    jobData: JobData[];
+}
+
+export type FooterData = {
+    url: string,
+    text: string
+}
+
 export type JobData = {
     categories: string[],
     city: string,
@@ -13,10 +24,4 @@ export type JobData = {
     salaryType: string,
     title: string,
     type: string
-}
-
-export type ContextChildren = { children: ReactNode }
-
-export interface DatabaseContextInterface {
-    jobData: JobData[];
 }

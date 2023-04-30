@@ -11,10 +11,10 @@ const BlogHighlights = () => {
   return (
     <section className="wrapper-sm md:wrapper font-gordita py-8">
       <div className="flex flex-col gap-4 items-center justify-between pb-8 md:flex-row">
-        <h2 className="text-4xl md:text-6xl text-jobi-green-dark">Jobi Guides</h2>
+        <h2 className="text-4xl md:text-6xl text-black">Jobi Guides</h2>
         <NavLink
           to="/"
-          className="text-sm text-jobi-green-dark py-2 border-b-2 border-b-jobi-green-dark transition-all hover:text-jobi-black/50 hover:border-b-black/50 focus:text-black/50 focus:border-b-black/50"
+          className="text-sm text-jobi-green-dark py-2 border-b-2 border-b-jobi-green-dark transition-all hover:text-black/50 hover:border-b-black/50 focus:text-black/50 focus:border-b-black/50"
         >
           Explore all posts &rsaquo;
         </NavLink>

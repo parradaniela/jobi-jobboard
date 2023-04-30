@@ -44,8 +44,8 @@ const Nav = () => {
                 </ul>
 
                 <div className="flex flex-col gap-8 md:flex-row">
-                    <Button style="btn-outline" corners="rounded-full">Login/Sign Up</Button>
-                    <Button style="btn-lime" corners="rounded-full">Post a job</Button>
+                    <Button ariaLabel="Login or create an account with us" style="btn-outline" corners="rounded-full">Login/Sign Up</Button>
+                    <Button ariaLabel="Post a new position to our job bank" style="btn-lime" corners="rounded-full">Post a job</Button>
                 </div>
             </nav>
         </>

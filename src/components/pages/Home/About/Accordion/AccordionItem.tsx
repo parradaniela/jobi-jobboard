@@ -33,6 +33,7 @@ const AccordionItem = ({ children, heading, index }: AccordionItemProps) => {
                                 ? "text-base transition-all rotate-180"
                                 : 'text-base transition-all'
                         }
+                        role="presentation"
                     />
                 </span>
             </button>

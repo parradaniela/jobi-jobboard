@@ -8,8 +8,8 @@ const PaymentDiv = () => {
                 <img src={checkmark} alt="Various payment types accepted" />
             </div>
             <div>
-                <p className="text-sm text-gray-400">Payment</p>
-                <p className="text-base font-semibold">Escrow System</p>
+                <p className="text-sm text-black">Payment</p>
+                <p className="text-base font-semibold text-black">Escrow System</p>
             </div>
         </div>
     )
