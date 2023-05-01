@@ -1,4 +1,4 @@
-import { DatabaseContextInterface, JobData } from "../types/databaseTypes"
+import { DatabaseContextInterface, JobData } from "../types/dataTypes"
 
 export const initJobDataState: JobData[] = [
     {

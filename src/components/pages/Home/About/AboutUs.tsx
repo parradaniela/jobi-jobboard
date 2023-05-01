@@ -1,3 +1,4 @@
+//Component imports
 import AboutAccordion from "./Accordion/AboutAccordion"
 import AboutSearch from "./Form/AboutSearch"
 

@@ -1,15 +1,12 @@
+//Type imports
+import { FooterProps } from "../../../types/propTypes"
+//Component imports
 import ListItemLinks from "../../Global/LILinks/ListItemLinks"
-import { FooterData } from "./footerNavData"
 
-type PropsType = {
-    heading: string,
-    navLinks: FooterData[]
-}
-
-const FooterNavListItem = ({ heading, navLinks }: PropsType) => {
+const FooterNavListItem = ({ heading, navLinks }: FooterProps) => {
     return (
         <li className="transition-all px-10 md:px-14 lg:px-20 xl:px-10 sm:self-start">
-            <h3 className="text-xl font-circularStd font-medium leading-normal">{heading}</h3>
+            <h2 className="text-xl font-circularStd font-medium leading-normal">{heading}</h2>
             <ul>
                 {
                     navLinks.map(link => {

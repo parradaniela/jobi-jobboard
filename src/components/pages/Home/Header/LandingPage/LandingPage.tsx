@@ -1,6 +1,6 @@
+//Component imports
 import FactList from "./FactList"
 import SearchBox from "./SearchBox"
-
 
 const LandingPage = () => {
     return (

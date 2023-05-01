@@ -1,16 +1,12 @@
 //react imports
-import { ReactNode, useState } from "react"
+import { useState } from "react"
 //ionicons
 import { IonIcon } from "@ionic/react"
 import { chevronDownOutline } from "ionicons/icons"
+//types
+import { AccordionItemProps } from "../../../../../types/propTypes"
 
-type Props = {
-    children: ReactNode,
-    heading: string,
-    index: number
-}
-
-const AccordionItem = ({ children, heading, index }: Props) => {
+const AccordionItem = ({ children, heading, index }: AccordionItemProps) => {
     const [selected, setSelected] = useState<number | null>(null)
 
     const onClickToggleSelected = (index: number) => {
@@ -24,6 +20,7 @@ const AccordionItem = ({ children, heading, index }: Props) => {
             <button
                 aria-controls={`content-${index}`}
                 aria-expanded={selected === index ? "true" : "false"}
+                aria-label="Click to toggle more information"
                 id={`accordion-control-${index}`}
                 className="w-full text-2xl text-jobi-green-dark font-gorditaSemibold leading-loose cursor-pointer flex gap-4 justify-center items-center lg:justify-start"
             >
@@ -36,6 +33,7 @@ const AccordionItem = ({ children, heading, index }: Props) => {
                                 ? "text-base transition-all rotate-180"
                                 : 'text-base transition-all'
                         }
+                        role="presentation"
                     />
                 </span>
             </button>

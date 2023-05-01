@@ -24,11 +24,10 @@ const CandidatesDiv = () => {
                     <img src={headshotThree} alt="Headshot of one of our candidates" />
                 </div>
                 <div className="w-16 h-16 rounded-full border-4 border-white absolute left-3 top-0 z-30 overflow-hidden">
-                    <img src={headshotFour} alt="Headshot of one of our candidates"  />
+                    <img src={headshotFour} alt="Headshot of one of our candidates" />
                 </div>
-                <NavLink to="/" className="w-16 h-16 rounded-full border-4 flex justify-center items-center border-white absolute left-14 top-0 z-40 bg-slate-400 transition-all hover:bg-slate-200 focus:bg-slate-200">
-                    <span className="sr-only">Click here to navigate to our candidates page</span>
-                    <IonIcon icon={addOutline} className="text-6xl"/>
+                <NavLink to="/" className="w-16 h-16 rounded-full border-4 flex justify-center items-center border-white absolute left-14 top-0 z-40 bg-slate-400 transition-all hover:bg-slate-200 focus:bg-slate-200" aria-label="Click here to navigate to our candidates page">
+                    <IonIcon icon={addOutline} className="text-6xl" />
                 </NavLink>
             </div>
         </div>

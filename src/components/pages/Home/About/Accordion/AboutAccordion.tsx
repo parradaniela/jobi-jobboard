@@ -1,13 +1,14 @@
+//Component imports
 import Anchor from "../../../../Global/Buttons/Anchor"
 import AccordionItem from "./AccordionItem"
 
 const AboutAccordion = () => {
-    
+
     return (
         <div className="flex flex-col basis-1/2">
             <h2 className="text-center lg:text-left ">
                 <span className="text-jobi-green-dark text-base leading-loose font-gordita">Why choose us?</span>
-                <span className="text-jobi-green-dark block text-4xl md:text-6xl font-gorditaSemibold  capitalize leading-tight">A world of talent at your fingertips</span>
+                <span className="text-black block text-4xl md:text-6xl font-gorditaSemibold  capitalize leading-tight">A world of talent at your fingertips</span>
             </h2>
             <ul className="py-4" aria-label="Accordion Control Group Buttons">
                 <AccordionItem heading="Seamless Search" index={0}>
@@ -21,7 +22,7 @@ const AboutAccordion = () => {
                 </AccordionItem>
             </ul>
             <div className="w-1/2 self-center lg:self-start">
-                <Anchor style="btn-green" corners="rounded-full" url="/" extraClasses="w-1/5 flex justify-center items-center my-4 lg:w-2/3">
+                <Anchor ariaLabel="Learn more about our services" style="btn-green" corners="rounded-full" url="/" extraClasses="w-1/5 flex justify-center items-center my-4 lg:w-2/3">
                     Learn more
                 </Anchor>
             </div>

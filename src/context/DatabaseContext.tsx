@@ -4,7 +4,7 @@ import { db } from "../services/firebase";
 // react imports
 import { createContext, useEffect, useState } from "react";
 // types
-import { ContextChildren, DatabaseContextInterface, JobData } from "../types/databaseTypes";
+import { ContextChildren, DatabaseContextInterface, JobData } from "../types/dataTypes";
 import { initDatabaseContextState, initJobDataState } from "./initialStates";
 
 export const DatabaseContext = createContext<DatabaseContextInterface>(initDatabaseContextState);
@@ -17,7 +17,7 @@ const DatabaseProvider = ({ children }: ContextChildren) => {
             .then((dataSnapshot) => {
                 const newData = dataSnapshot.docs
                     .map((doc) => (
-                        { ...doc.data(), id: doc.id}
+                        { ...doc.data(), id: doc.id }
                     )
                     ) as JobData[];
                 setJobData(newData)
@@ -30,7 +30,7 @@ const DatabaseProvider = ({ children }: ContextChildren) => {
 
     return (
         <DatabaseContext.Provider
-            value={{jobData}}
+            value={{ jobData }}
         >
             {children}
         </DatabaseContext.Provider>
@@ -38,4 +38,4 @@ const DatabaseProvider = ({ children }: ContextChildren) => {
 }
 
 export default DatabaseProvider;
-        
+

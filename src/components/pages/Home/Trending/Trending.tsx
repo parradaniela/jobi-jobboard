@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 const Trending = () => {
     return (
         <section className="wrapper-sm md:wrapper font-gordita ">
-            <h2 className="transition-all text-4xl text-center md:text-left md:text-6xl text-jobi-black">Trending Jobs</h2>
+            <h2 className="transition-all text-4xl text-center md:text-left md:text-6xl text-black">Trending Jobs</h2>
             <ul className="transition-all grid grid-flow-row my-8 gap-4 sm:grid-cols-2 xl:grid-cols-4 xl:my-16">
                 <li className="transition-all bg-wp bg-cover bg-[5%] h-72 w-full group sm:h-96 xl:hover:-translate-y-3 xl:focus:-translate-x-3">
                     <NavLink to="/" className="h-full w-full flex items-end">

@@ -1,3 +1,4 @@
+//Component imports
 import Nav from "./Nav";
 import LandingPage from './LandingPage/LandingPage';
 

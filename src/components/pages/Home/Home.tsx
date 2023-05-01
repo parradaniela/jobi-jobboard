@@ -1,3 +1,4 @@
+//Component imports
 import AboutUs from "./About/AboutUs"
 import BannerBottom from "./BannerBottom/BannerBottom"
 import BlogHighlights from "./Blog/BlogHighlights"
