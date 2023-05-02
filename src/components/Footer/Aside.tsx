@@ -3,7 +3,7 @@ import logoFacebook from '../../assets/index/logos/logo-facebook.svg';
 import logoInstagram from '../../assets/index/logos/logo-instagram.svg';
 import logoPinterest from '../../assets/index/logos/logo-pinterest.svg';
 //Components
-import ListItemLinks from '../Global/LILinks/ListItemLinks';
+import ListItemLinks from '../UI/LILinks/ListItemLinks';
 
 const Aside = () => {
   return (

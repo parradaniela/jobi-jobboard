@@ -1,10 +1,10 @@
 //logos
-import googleLogo from '../../../../assets/index/logos/logo-google.png';
-import shipBobLogo from '../../../../assets/index/logos/logo-shipbob.png';
-import dribbbleLogo from '../../../../assets/index/logos/logo-dribbble.png';
-import slackLogo from '../../../../assets/index/logos/logo-slack.png';
-import vineLogo from '../../../../assets/index/logos/logo-vine.png';
-import airbnbLogo from '../../../../assets/index/logos/logo-airbnb.png';
+import googleLogo from '../../assets/index/logos/logo-google.png';
+import shipBobLogo from '../../assets/index/logos/logo-shipbob.png';
+import dribbbleLogo from '../../assets/index/logos/logo-dribbble.png';
+import slackLogo from '../../assets/index/logos/logo-slack.png';
+import vineLogo from '../../assets/index/logos/logo-vine.png';
+import airbnbLogo from '../../assets/index/logos/logo-airbnb.png';
 
 const Partners = () => {
     // Set full basis for Vine logo to keep more consistent column shapes in smallest screen sizes, then back to auto at small breakpoint 

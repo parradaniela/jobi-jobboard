@@ -1,7 +1,7 @@
 //Type imports
 import { FooterProps } from "../../../types/propTypes"
 //Component imports
-import ListItemLinks from "../../Global/LILinks/ListItemLinks"
+import ListItemLinks from "../../UI/LILinks/ListItemLinks"
 
 const FooterNavListItem = ({ heading, navLinks }: FooterProps) => {
     return (

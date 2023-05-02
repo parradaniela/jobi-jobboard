@@ -1,6 +1,6 @@
 //Component imports
-import AboutAccordion from "./Accordion/AboutAccordion"
-import AboutSearch from "./Form/AboutSearch"
+import AboutAccordion from "../../components/pages/Home/About/Accordion/AboutAccordion"
+import AboutSearch from "../../components/pages/Home/About/Form/AboutSearch"
 
 const AboutUs = () => {
     return (

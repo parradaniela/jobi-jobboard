@@ -1,10 +1,11 @@
 //images
-import accountIcon from '../../../../assets/index/button-icons/icon-account.svg'
-import docIcon from '../../../../assets/index/button-icons/icon-document.svg'
-import pencilIcon from '../../../../assets/index/button-icons/icon-pencil.svg'
-import playIcon from '../../../../assets/index/button-icons/icon-video-play.svg'
+import accountIcon from '../../assets/index/button-icons/icon-account.svg'
+import docIcon from '../../assets/index/button-icons/icon-document.svg'
+import pencilIcon from '../../assets/index/button-icons/icon-pencil.svg'
+import playIcon from '../../assets/index/button-icons/icon-video-play.svg'
 //Component
-import StepCard from "./StepCard"
+import StepCard from '../../components/pages/Home/HowItWorks/StepCard'
+
 
 const HowItWorks = () => {
     return (

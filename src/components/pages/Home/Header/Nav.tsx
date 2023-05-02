@@ -1,9 +1,9 @@
 //react imports
 import { useState } from "react"
 //component imports
-import Button from "../../../Global/Buttons/Button"
-import ListItemLinks from "../../../Global/LILinks/ListItemLinks"
-import LogoHorizontal from "../../../Logo/LogoHorizontal"
+import Button from "../../../UI/Buttons/Button"
+import ListItemLinks from "../../../UI/LILinks/ListItemLinks"
+import LogoHorizontal from "../../../UI/Logo/LogoHorizontal"
 //ionicons
 import { IonIcon } from "@ionic/react"
 import { closeCircleOutline, menuOutline } from "ionicons/icons"

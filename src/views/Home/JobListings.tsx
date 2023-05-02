@@ -1,8 +1,9 @@
 //react imports
 import { NavLink } from "react-router-dom"
 // components
-import JobsList from "./JobsList"
-import JobsAside from "./JobsAside"
+import JobsList from "../../components/pages/Home/JobListings/JobsList"
+import JobsAside from "../../components/pages/Home/JobListings/JobsAside"
+
 
 const JobListings = () => {
 

@@ -3,13 +3,13 @@ import quotations from "../../../../assets/index/button-icons/icon-quotes.svg";
 //type imports
 import { TestimonialCarouselProps } from "../../../../types/propTypes";
 
-const TestimonialCarousel = ({ heading, text, name, location, img }: TestimonialCarouselProps) => {
+const TestimonialCarousel = ({ heading, text, name, location, img, stars }: TestimonialCarouselProps) => {
     return (
-        <li className="bg-white p-8 rounded-md self-stretch md:p-11 md:w-2/3 lg:w-2/5">
+        <li className="flex flex-col justify-between bg-white p-8 rounded-md self-stretch md:p-11 md:w-2/3 lg:w-2/5">
             <div className="flex items-center justify-between">
                 <h3 className="text-lg text-jobi-green-dark leading-loose">
                     {heading}
-                    <span className="block">⭐⭐⭐⭐⭐</span>
+                    <span className="block">{'⭐'.repeat(stars)}</span>
                 </h3>
                 <img src={quotations} role="presentation" />
             </div>

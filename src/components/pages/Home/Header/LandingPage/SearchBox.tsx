@@ -1,5 +1,5 @@
 //Component imports
-import Button from "../../../../Global/Buttons/Button"
+import Button from "../../../../UI/Buttons/Button"
 
 const SearchBox = () => {
   return (

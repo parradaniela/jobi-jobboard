@@ -1,5 +1,6 @@
 //Component imports
-import Anchor from "../../../Global/Buttons/Anchor"
+import Anchor from "../../components/UI/Buttons/Anchor"
+
 
 const BannerBottom = () => {
     return (

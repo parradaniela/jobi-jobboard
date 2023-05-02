@@ -1,7 +1,7 @@
 // type imports
 import { JobData } from "../../../../types/dataTypes"
 // component imports
-import Button from "../../../Global/Buttons/Button"
+import Button from "../../../UI/Buttons/Button"
 //image imports
 import bookmarkImg from "../../../../assets/index/button-icons/icon-bookmark.svg"
 //ionicons

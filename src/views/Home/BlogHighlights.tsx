@@ -1,11 +1,11 @@
 //react imports
 import { NavLink } from "react-router-dom"
 //component imports
-import HighlightArticle from "./HighlightArticle"
+import HighlightArticle from "../../components/pages/Home/Blog/HighlightArticle"
 //images
-import articleImgOne from "../../../../assets/index/photos/photo-wfh-thought-catalog.jpg"
-import articleImgTwo from "../../../../assets/index/photos/photo-businessman-taylor-grote.jpg"
-import articleImgThree from "../../../../assets/index/photos/photo-laptop-corinne-kutz.jpg"
+import articleImgOne from "../../assets/index/photos/photo-wfh-thought-catalog.jpg"
+import articleImgTwo from "../../assets/index/photos/photo-businessman-taylor-grote.jpg"
+import articleImgThree from "../../assets/index/photos/photo-laptop-corinne-kutz.jpg"
 
 const BlogHighlights = () => {
   return (

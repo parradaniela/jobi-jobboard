@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import jobiLogo from '../../assets/index/logos/logo-jobi.png';
+import jobiLogo from '../../../assets/index/logos/logo-jobi.png';
 
 type PropsType = {
     children?: JSX.Element,
