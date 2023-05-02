@@ -25,3 +25,13 @@ export type JobData = {
     title: string,
     type: string
 }
+
+export type TestimonialData = {
+    heading: string,
+    id: string,
+    text: string,
+    name: string,
+    location: string,
+    img: string,
+    stars: number
+}

@@ -50,5 +50,6 @@ export type TestimonialCarouselProps = {
     text: string,
     name: string,
     location: string,
-    img: string
+    img: string,
+    stars: number
 }
