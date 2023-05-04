@@ -1,15 +1,16 @@
 //image imports
 import quotations from "../../../../assets/index/button-icons/icon-quotes.svg";
 //type imports
-import { TestimonialCarouselProps } from "../../../../types/propTypes";
+import { TestimonialListItemProps } from "../../../../types/propTypes";
 
-const TestimonialCarousel = ({ heading, text, name, location, img, stars }: TestimonialCarouselProps) => {
+const TestimonialCarousel = ({ heading, text, name, location, img, stars }: TestimonialListItemProps) => {
     return (
-        <li className="flex flex-col justify-between bg-white p-8 rounded-md self-stretch md:p-11 md:w-2/3 lg:w-2/5">
+        <div className="flex flex-col justify-between bg-white p-8 rounded-md self-stretch md:p-11">
             <div className="flex items-center justify-between">
                 <h3 className="text-lg text-jobi-green-dark leading-loose">
                     {heading}
-                    <span className="block">{'⭐'.repeat(stars)}</span>
+                    <span className="block" aria-hidden="true">{'⭐'.repeat(stars)}</span>
+                    <span className="sr-only">{`${stars} stars`}</span>
                 </h3>
                 <img src={quotations} role="presentation" />
             </div>
@@ -24,7 +25,7 @@ const TestimonialCarousel = ({ heading, text, name, location, img, stars }: Test
                     <img src={img} alt={name} />
                 </div>
             </div>
-        </li>
+        </div>
     )
 }
 
