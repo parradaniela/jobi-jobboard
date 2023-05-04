@@ -18,6 +18,7 @@ const Nav = () => {
                 <IonIcon icon={menuOutline} />
             </button>
             <nav
+                aria-label="primary"
                 className={
                     open
                         ? `fixed top-0 left-0 transition-all duration-500 flex flex-col justify-evenly items-center gap-8 font-gordita min-h-screen w-full text-white bg-jobi-black py-6 
