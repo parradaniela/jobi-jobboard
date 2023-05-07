@@ -11,7 +11,6 @@ export const DatabaseContext = createContext<DatabaseContextInterface>(initDatab
 const DatabaseProvider = ({ children }: ContextChildren) => {
     const [jobData, setJobData] = useState<JobData[]>(initJobDataState)
 
-
     useEffect(() => {
         fetchFirebaseCollection("jobList", setJobData)
     }, [])
