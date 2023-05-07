@@ -1,10 +1,10 @@
 //react imports
 import { NavLink } from "react-router-dom";
 //image imports
-import headshotOne from "../../../../../assets/index/headshots/headshot-alexander-hipp.jpg";
-import headshotTwo from "../../../../../assets/index/headshots/headshot-brian-lundquist.jpg";
-import headshotThree from "../../../../../assets/index/headshots/headshot-alex-starnes.jpg";
-import headshotFour from "../../../../../assets/index/headshots/headshot-zahir-namane.jpg";
+import headshotOne from "../../../../../assets/index/headshots/headshot-alexander-hipp.png";
+import headshotTwo from "../../../../../assets/index/headshots/headshot-brian-lundquist.png";
+import headshotThree from "../../../../../assets/index/headshots/headshot-alex-starnes.png";
+import headshotFour from "../../../../../assets/index/headshots/headshot-zahir-namane.png";
 //ionicons
 import { IonIcon } from "@ionic/react";
 import { addOutline } from "ionicons/icons";
