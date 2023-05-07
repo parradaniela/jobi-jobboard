@@ -46,10 +46,12 @@ export type StepCardProps = {
 }
 
 export type TestimonialCarouselProps = {
-    slideData: TestimonialData[]
+    slideData: TestimonialData[],
+    slideNum: number,
+    current: number
 }
 
-export type TestimonialListItemProps = {
+export type TestimonialSlideContentProps = {
     heading: string,
     text: string,
     name: string,

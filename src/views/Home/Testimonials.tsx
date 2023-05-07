@@ -1,5 +1,5 @@
 //component imports
-import TestimonialCarousel from "../../components/pages/Home/Testimonials/TestimonialCarousel";
+import TestimonialCarousel from "../../components/pages/Home/Testimonials/TestimonialSlideContent";
 //ionicons
 import { IonIcon } from "@ionic/react"
 import { arrowBackOutline, arrowForwardOutline } from 'ionicons/icons';
@@ -15,6 +15,7 @@ const Testimonials = () => {
     const [reviews, setReviews] = useState<TestimonialData[] | []>([]);
     const [firstSlide, setFirstSlide] = useState<TestimonialData[] | []>([])
     const [secondSlide, setSecondSlide] = useState<TestimonialData[] | []>([])
+    const [thirdSlide, setThirdSlide] = useState<TestimonialData[] | []>([])
     const [current, setCurrent] = useState(0)
 
     const prevSlide = () => setCurrent((current) => current === 0 ? 2 : current - 1)
@@ -22,13 +23,14 @@ const Testimonials = () => {
 
     useEffect(() => {
         fetchFirebaseCollection("testimonials", setReviews);
-        setFirstSlide([...reviews].slice(0, 2))
-        setSecondSlide(reviews.slice(2))
-    }, [reviews]);
+        setFirstSlide(reviews.slice(0, 2))
+        setSecondSlide(reviews.slice(2, 4))
+        setThirdSlide(reviews.slice(4))
+    }, []);
 
     return (
         <section
-            className="py-8 font-gordita bg-testimonials bg-center" >
+            className="py-8 font-gordita bg-testimonials bg-center md:py-16" >
             <div
                 className="wrapper-sm overflow-hidden relative md:wrapper"
                 role="region"
@@ -46,10 +48,10 @@ const Testimonials = () => {
                         </button>
                     </div>
                 </div>
-                <div className="mt-8 flex transition-transform ease-out duration-500" style={{ transform: `translateX(-${current * 100}%)` }}>
-                    <CarouselSlide slideData={firstSlide} />
-                    <CarouselSlide slideData={secondSlide} />
-                    <CarouselSlide slideData={firstSlide} />
+                <div className="mt-8 flex transition-transform ease-out duration-500 md:mt-16" style={{ transform: `translateX(-${current * 100}%)` }}>
+                    <CarouselSlide slideData={firstSlide} slideNum={0} current={current} />
+                    <CarouselSlide slideData={secondSlide} slideNum={1} current={current} />
+                    <CarouselSlide slideData={thirdSlide} slideNum={2} current={current} />
                 </div>
             </div>
         </section>

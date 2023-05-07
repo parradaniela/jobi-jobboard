@@ -1,11 +1,11 @@
 //image imports
 import quotations from "../../../../assets/index/button-icons/icon-quotes.svg";
 //type imports
-import { TestimonialListItemProps } from "../../../../types/propTypes";
+import { TestimonialSlideContentProps } from "../../../../types/propTypes";
 
-const TestimonialCarousel = ({ heading, text, name, location, img, stars }: TestimonialListItemProps) => {
+const TestimonialCarousel = ({ heading, text, name, location, img, stars }: TestimonialSlideContentProps) => {
     return (
-        <div className="flex flex-col justify-between bg-white p-8 rounded-md self-stretch md:p-11">
+        <li className="mx-4 flex flex-col justify-between bg-white p-8 rounded-md self-stretch sm:mx-12 md:p-11 md:mx-0 md:w-2/5">
             <div className="flex items-center justify-between">
                 <h3 className="text-lg text-jobi-green-dark leading-loose">
                     {heading}
@@ -25,7 +25,7 @@ const TestimonialCarousel = ({ heading, text, name, location, img, stars }: Test
                     <img src={img} alt={name} />
                 </div>
             </div>
-        </div>
+        </li>
     )
 }
 
