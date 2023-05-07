@@ -11,7 +11,7 @@ const StepCard = ({ src, text, url, linkText }: StepCardProps) => {
             </div>
             <div>
                 <p className="mb-4">{text}</p>
-                <NavLink to={url} className="uppercase text-jobi-green-dark underline transition-all group-hover:text-jobi-green-dark group-focus-within:text-jobi-green-dark ">
+                <NavLink to={url} className="uppercase text-jobi-green-dark underline transition-all hover:text-jobi-green-bright focus-within:text-jobi-green-bright ">
                     {linkText}
                 </NavLink>
             </div>
