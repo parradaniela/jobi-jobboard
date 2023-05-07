@@ -1,5 +1,5 @@
 //type import
-import { FooterData } from "../../../types/dataTypes"
+import { FooterData } from "../../../../../types/dataTypes"
 
 export const footerNavLinks: FooterData[] = [
     {

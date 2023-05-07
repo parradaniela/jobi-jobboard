@@ -1,9 +1,10 @@
 //Images
-import logoFacebook from '../../assets/index/logos/logo-facebook.svg';
-import logoInstagram from '../../assets/index/logos/logo-instagram.svg';
-import logoPinterest from '../../assets/index/logos/logo-pinterest.svg';
+import logoFacebook from '../../../../assets/index/logos/logo-facebook.svg';
+import logoInstagram from '../../../../assets/index/logos/logo-instagram.svg';
+import logoPinterest from '../../../../assets/index/logos/logo-pinterest.svg';
 //Components
-import ListItemLinks from '../UI/LILinks/ListItemLinks';
+import ListItemLinks from '../../LILinks/ListItemLinks';
+
 
 const Aside = () => {
   return (
@@ -12,7 +13,7 @@ const Aside = () => {
         <ListItemLinks url='/' text='Privacy & Terms' extraClasses='hover:text-jobi-green-lime focus-within:text-jobi-green-lime  ' />
         <ListItemLinks url='/' text='Contact Us' extraClasses='hover:text-jobi-green-lime focus-within:text-jobi-green-lime ' />
       </ul>
-      <p className="text-xs opacity-60 my-4 text-center xl:my-0 xl:text-left">Copyright @2022 jobi inc.</p>
+      <p className="text-xs opacity-80 my-4 text-center xl:my-0 xl:text-left">Copyright @2022 jobi inc.</p>
       <ul className="flex justify-center gap-4 xl:justify-between">
         <li className='transition-all hover:opacity-70 focus-within:opacity-70'>
           <a href="/">

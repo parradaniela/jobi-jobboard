@@ -1,9 +1,9 @@
 //react imports
 import { useState } from "react"
 //component imports
-import Button from "../../../UI/Buttons/Button"
-import ListItemLinks from "../../../UI/LILinks/ListItemLinks"
-import LogoHorizontal from "../../../UI/Logo/LogoHorizontal"
+import Button from "../Buttons/Button"
+import ListItemLinks from "../LILinks/ListItemLinks"
+import LogoWhite from "../Logo/LogoWhite"
 //ionicons
 import { IonIcon } from "@ionic/react"
 import { closeCircleOutline, menuOutline } from "ionicons/icons"
@@ -28,9 +28,9 @@ const Nav = () => {
                 }
             >
                 <div className="flex justify-evenly items-center w-full md:w-auto">
-                    <LogoHorizontal alt="Jobi Home Page">
+                    <LogoWhite alt="Jobi Home Page">
                         <h1 className="sr-only">Jobi</h1>
-                    </LogoHorizontal>
+                    </LogoWhite>
                     <button className="text-white text-6xl transition-all border-transparent rounded-lg p-1 border-2 hover:text-jobi-green-lime focus:text-jobi-green-lime md:hidden" onClick={toggleMobileMenu} aria-label="Close navigation menu">
                         <IonIcon icon={closeCircleOutline} />
                     </button>
@@ -38,10 +38,10 @@ const Nav = () => {
 
                 <ul className="flex flex-col text-2xl text-center gap-8 md:flex-row md:text-base md:text-left" onClick={toggleMobileMenu}>
                     <ListItemLinks url="/" text="Home" extraClasses="hover:text-jobi-green-lime focus-within:text-jobi-green-lime" />
-                    <ListItemLinks url="job-list" text="Jobs" extraClasses="hover:text-jobi-green-lime focus-within:text-jobi-green-lime" />
-                    <ListItemLinks url="/" text="Explore" extraClasses="hover:text-jobi-green-lime focus-within:text-jobi-green-lime" />
-                    <ListItemLinks url="/" text="Category" extraClasses="hover:text-jobi-green-lime focus-within:text-jobi-green-lime" />
-                    <ListItemLinks url="/" text="Pages" extraClasses="hover:text-jobi-green-lime focus-within:text-jobi-green-lime" />
+                    <ListItemLinks url="jobs/wip" text="Jobs" extraClasses="hover:text-jobi-green-lime focus-within:text-jobi-green-lime" />
+                    <ListItemLinks url="jobs/wip" text="Explore" extraClasses="hover:text-jobi-green-lime focus-within:text-jobi-green-lime" />
+                    <ListItemLinks url="jobs/wip" text="Category" extraClasses="hover:text-jobi-green-lime focus-within:text-jobi-green-lime" />
+                    <ListItemLinks url="jobs/wip" text="Pages" extraClasses="hover:text-jobi-green-lime focus-within:text-jobi-green-lime" />
                 </ul>
 
                 <div className="flex flex-col gap-8 md:flex-row">
