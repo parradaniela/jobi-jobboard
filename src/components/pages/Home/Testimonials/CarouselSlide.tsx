@@ -10,7 +10,7 @@ const CarouselSlide = ({ slideData, slideNum, current }: TestimonialCarouselProp
             aria-label={`Carousel slide ${slideNum + 1} of 3, contains two items.`}
             className="w-full shrink-0"
         >
-            <ul className="flex flex-col justify-evenly items-center gap-8 md:flex-row" >
+            <ul className="w-full h-full flex flex-col justify-evenly items-center gap-8 md:flex-row" >
                 {
                     slideData.map(({ heading, text, name, location, img, stars, id }) => (
                         <TestimonialSlideContent

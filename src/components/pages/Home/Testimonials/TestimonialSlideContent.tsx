@@ -5,7 +5,7 @@ import { TestimonialSlideContentProps } from "../../../../types/propTypes";
 
 const TestimonialCarousel = ({ heading, text, name, location, img, stars }: TestimonialSlideContentProps) => {
     return (
-        <li className="mx-4 flex flex-col justify-between bg-white p-8 rounded-md self-stretch sm:mx-12 md:p-11 md:mx-0 md:w-2/5">
+        <li className="basis-full w-[90%] flex flex-col justify-between bg-white p-8 rounded-md sm:mx-12 md:p-11 md:mx-0 md:w-2/5 md:self-stretch md:basis-auto">
             <div className="flex items-center justify-between">
                 <h3 className="text-lg text-jobi-green-dark leading-loose">
                     {heading}
@@ -21,7 +21,7 @@ const TestimonialCarousel = ({ heading, text, name, location, img, stars }: Test
                 <p className="text-sm leading-loose">
                     <span className="font-bold">{name},</span> {location}
                 </p>
-                <div className="h-20 w-20 rounded-full overflow-hidden">
+                <div className="hidden h-20 w-20 rounded-full overflow-hidden lg:block">
                     <img src={img} alt={name} />
                 </div>
             </div>
