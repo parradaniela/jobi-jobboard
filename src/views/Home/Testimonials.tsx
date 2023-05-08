@@ -12,6 +12,7 @@ import { TestimonialData } from "../../types/dataTypes";
 import CarouselSlide from "../../components/pages/Home/Testimonials/CarouselSlide";
 
 const Testimonials = () => {
+    //TODO: Is it better to create an initial state for the testimonial data to use here instead of an empty array?
     const [reviews, setReviews] = useState<TestimonialData[] | []>([]);
     const [firstSlide, setFirstSlide] = useState<TestimonialData[] | []>([])
     const [secondSlide, setSecondSlide] = useState<TestimonialData[] | []>([])
@@ -20,13 +21,16 @@ const Testimonials = () => {
 
     const prevSlide = () => setCurrent((current) => current === 0 ? 2 : current - 1)
     const nextSlide = () => setCurrent((current) => current === 2 ? 0 : current + 1)
-
+    //TODO: Is it OK to use two useEffects like this? 
     useEffect(() => {
         fetchFirebaseCollection("testimonials", setReviews);
+    }, []);
+
+    useEffect(() => {
         setFirstSlide(reviews.slice(0, 2))
         setSecondSlide(reviews.slice(2, 4))
         setThirdSlide(reviews.slice(4))
-    }, []);
+    }, [reviews])
 
     return (
         <section
