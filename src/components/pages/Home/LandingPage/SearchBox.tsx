@@ -12,7 +12,7 @@ const SearchBox = () => {
           <input type="text" id="searchText" className="text-sm p-2 my-1" />
         </div>
 
-        <div className="flex flex-col bg-white p-3 my-4 rounded-md w-full md:w-auto md:my-0 md:rounded-none">
+        <div className="flex flex-col bg-white p-3 my-4 rounded-md w-full self-stretch md:w-auto md:my-0 md:rounded-none">
           <label htmlFor="category" className="text-black text-xs px-2 self-stretch">Category</label>
           <select id="category" className="text-sm p-2 my-1 bg-white">
             <option value="" className="text-sm">Select a category</option>

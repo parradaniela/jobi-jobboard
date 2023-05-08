@@ -42,7 +42,7 @@ const Testimonials = () => {
                 aria-roledescription="carousel"
             >
                 <div className="md:flex items-end justify-between">
-                    <h2 className="text-center text-3xl md:text-6xl leading-normal text-white md:text-left lg:w-1/2 capitalize">What do our clients think of us?</h2>
+                    <h2 className="text-center capitalize text-3xl leading-normal text-white md:text-6xl md:leading-normal md:text-left lg:w-1/2 ">What do our clients think of us?</h2>
                     <div role="group" aria-label="Carousel slide controls" className="flex gap-4 my-4 basis-1/12 justify-center md:justify-between text-white pb-4">
                         <button onClick={prevSlide} className="transition-all flex items-center p-[10px] mx-4 border-1 border-white rounded-full hover:bg-jobi-green-lime hover:border-jobi-green-lime hover:text-black focus:bg-jobi-green-lime focus:border-jobi-green-lime focus:text-black" aria-label="Previous reviews">
                             <IonIcon icon={arrowBackOutline} className="text-2xl" />
