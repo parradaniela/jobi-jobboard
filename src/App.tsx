@@ -1,37 +1,34 @@
 //router imports
-import {
-  createBrowserRouter,
-  Route,
-  createRoutesFromElements,
-  RouterProvider
-} from "react-router-dom";
-//layouts
-import RootLayout from "./components/layouts/RootLayout";
-// pages
-import Home from "./components/pages/Home/Home";
-import JobList from "./components/pages/JobList/JobList";
-import Error from "./components/pages/Error/Error";
-import DatabaseProvider from "./context/DatabaseContext";
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 //context import
-
-
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}> 
-      <Route index element={<Home />} />
-      <Route path="job-list" element={<JobList />} />
-      <Route path="/error" element={<Error />} />
-    </Route>
-  )
-)
+import DatabaseProvider from "./context/DatabaseContext";
+//layout imports
+import ErrorLayout from "./layouts/ErrorLayout";
+import JobsLayout from "./layouts/JobsLayout";
+import RootLayout from "./layouts/RootLayout";
+//component imports
+import WIP from "./views/Error/WIP";
+import Home from "./views/Home/Home";
 
 function App() {
-  
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <>
+        <Route path="/" element={<RootLayout />}>
+          <Route index element={<Home />} />
+        </Route>
+        <Route path="jobs" element={<JobsLayout />} >
+          <Route path="wip" element={<WIP />} />
+        </Route>
+        <Route path="*" element={<ErrorLayout />} />
+      </>
+    )
+  )
   return (
     <DatabaseProvider>
-      <RouterProvider router={router} />  
+      <RouterProvider router={router} />
     </DatabaseProvider>
-    
   )
 }
 

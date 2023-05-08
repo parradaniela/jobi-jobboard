@@ -1,7 +1,7 @@
 //React imports
 import { ReactNode } from "react"
 //Type imports
-import { FooterData } from "./dataTypes"
+import { FooterData, TestimonialData } from "./dataTypes"
 
 export type AccordionItemProps = {
     children: ReactNode,
@@ -46,9 +46,16 @@ export type StepCardProps = {
 }
 
 export type TestimonialCarouselProps = {
+    slideData: TestimonialData[],
+    slideNum: number,
+    current: number
+}
+
+export type TestimonialSlideContentProps = {
     heading: string,
     text: string,
     name: string,
     location: string,
-    img: string
+    img: string,
+    stars: number
 }

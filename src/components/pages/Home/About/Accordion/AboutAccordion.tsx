@@ -1,5 +1,5 @@
 //Component imports
-import Anchor from "../../../../Global/Buttons/Anchor"
+import Anchor from "../../../../UI/Buttons/Anchor"
 import AccordionItem from "./AccordionItem"
 
 const AboutAccordion = () => {

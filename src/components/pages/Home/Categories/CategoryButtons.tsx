@@ -1,5 +1,5 @@
 //Image imports
-import Button from "../../../Global/Buttons/Button"
+import Button from "../../../UI/Buttons/Button"
 import penIcon from '../../../../assets/index/icons/icon-pen.svg';
 import codeIcon from '../../../../assets/index/icons/icon-code.svg';
 import bagIcon from '../../../../assets/index/icons/icon-bag.svg';
