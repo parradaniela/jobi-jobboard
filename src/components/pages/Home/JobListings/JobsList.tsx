@@ -7,20 +7,20 @@ import JobListItem from "./JobListItem"
 
 const JobsList = () => {
     const { jobData } = useContext(DatabaseContext)
-    //TODO: Update job data to actually include dates and update this to be a real function that checks for the five most recent ones
+
     const mostRecent = jobData.slice(0, 5)
     return (
         <ul className="flex flex-col gap-4 justify-center items-center py-8">
             {
-                mostRecent.map(({ categories, city, country, experience, id, salaryEnd, salaryStart, salaryType, title, type }) => {
+                mostRecent.map(({ categories, city, country, experience, id, salaryEnd, salaryStart, salaryType, title, type, company, date }) => {
                     return (
                         <JobListItem
                             key={id}
                             categories={categories}
                             city={city}
                             country={country}
-                            company={"test"}
-                            date={"today"}
+                            company={company}
+                            date={date}
                             id={id}
                             experience={experience}
                             salaryEnd={salaryEnd}
