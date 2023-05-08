@@ -9,7 +9,7 @@ import articleImgThree from "../../assets/index/photos/photo-laptop-corinne-kutz
 
 const BlogHighlights = () => {
   return (
-    <section className="wrapper-sm md:wrapper font-gordita py-8">
+    <section className="wrapper-sm md:wrapper font-gordita py-16">
       <div className="flex flex-col gap-4 items-center justify-between pb-8 md:flex-row">
         <h2 className="text-4xl md:text-6xl text-black">Jobi Guides</h2>
         <NavLink
